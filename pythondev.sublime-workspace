@@ -1,0 +1,1500 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ROl_",
+				"Rol_moduloInline"
+			],
+			[
+				"Rol",
+				"Rol_modulo"
+			],
+			[
+				"tipo_",
+				"tipo_inventario"
+			],
+			[
+				"desc",
+				"desc_tipo_inventario"
+			],
+			[
+				"Cen",
+				"CentroAdmin"
+			],
+			[
+				"Alma",
+				"AlmacenAdmin"
+			],
+			[
+				"Fa",
+				"FamiliaAdmin"
+			],
+			[
+				"Audi",
+				"AuditorAdmin"
+			],
+			[
+				"q",
+				"question_id"
+			],
+			[
+				"pu",
+				"pub_date"
+			],
+			[
+				"que",
+				"question_text"
+			],
+			[
+				"git_",
+				"git_has_uncommited"
+			],
+			[
+				"get",
+				"get_git_branch"
+			],
+			[
+				"get_git",
+				"get_git_branch"
+			],
+			[
+				"getc",
+				"get_current_folder"
+			],
+			[
+				"PA",
+				"PATH_UTILBIN"
+			],
+			[
+				"GI",
+				"GITUNSTAGGED"
+			],
+			[
+				"GIT",
+				"GITUNCOMMITED"
+			],
+			[
+				"GT",
+				"GITPROMPT"
+			],
+			[
+				"user",
+				"userId"
+			],
+			[
+				"claseR",
+				"$claseReporte〔variable〕"
+			],
+			[
+				"Detalle",
+				"DetalleInventario"
+			],
+			[
+				"detalle",
+				"detalleInventario"
+			],
+			[
+				"Empresa",
+				"EmpresaCiudad\t(EmpresaCiudad.php)"
+			],
+			[
+				"Clasif",
+				"ClasifAlmacenSap\t(ClasifAlmacenSap.php)"
+			],
+			[
+				"stock_",
+				"stock_fisico\t(DetalleInventario.php)"
+			],
+			[
+				"Tipo",
+				"TipoUbicacion\t(TablaFijaTipoUbicacionSeeder.php)"
+			],
+			[
+				"id_tipo",
+				"id_tipo_inventario"
+			],
+			[
+				"date",
+				"datetime"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "acl/admin.py",
+			"settings":
+			{
+				"buffer_size": 782,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "inventario/admin.py",
+			"settings":
+			{
+				"buffer_size": 1945,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "acl/models.py",
+			"settings":
+			{
+				"buffer_size": 1882,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/util/xampp/apache/conf/httpd.conf",
+			"settings":
+			{
+				"buffer_size": 21284,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test.py",
+			"settings":
+			{
+				"buffer_size": 146,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 275.0,
+		"last_filter": "filerena",
+		"selected_items":
+		[
+			[
+				"filerena",
+				"File: Rename"
+			],
+			[
+				"theme",
+				"Material Theme: Activate theme"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"gbranch",
+				"Git: Change Branch"
+			],
+			[
+				"git unstage",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"gstat",
+				"Git: Status"
+			],
+			[
+				"gdiffall",
+				"Git: Diff All Files"
+			],
+			[
+				"uith",
+				"UI: Select Color Scheme"
+			],
+			[
+				"packinstall",
+				"Package Control: Install Package"
+			],
+			[
+				"packinst",
+				"Package Control: Install Package"
+			],
+			[
+				"gdiff",
+				"Git: Diff Current File"
+			],
+			[
+				"packainstall",
+				"Package Control: Install Package"
+			],
+			[
+				"ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"uithe",
+				"UI: Select Theme"
+			],
+			[
+				"material",
+				"Material Theme: Advanced configuration"
+			],
+			[
+				"materi",
+				"Material Theme: Advanced configuration"
+			],
+			[
+				"packaremo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ui:",
+				"UI: Select Theme"
+			],
+			[
+				"materia",
+				"Material Theme: Advanced configuration"
+			],
+			[
+				"packinsta",
+				"Package Control: Install Package"
+			],
+			[
+				"packinstal",
+				"Package Control: Install Package"
+			],
+			[
+				"settinuse",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"packaconts",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"packeinstall",
+				"Package Control: Install Package"
+			],
+			[
+				"packains",
+				"Package Control: Install Package"
+			],
+			[
+				"gunst",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"gadd",
+				"Git: Add Current File"
+			],
+			[
+				"unsta",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"gbran",
+				"Git: Track Remote Branch"
+			],
+			[
+				"gbracn",
+				"Git: Change Branch"
+			],
+			[
+				"gitgra",
+				"Git: Graph All"
+			],
+			[
+				"packain",
+				"Package Control: Install Package"
+			],
+			[
+				"them",
+				"Activate Materialize Theme"
+			],
+			[
+				"packre",
+				"Package Control: Remove Package"
+			],
+			[
+				"packageins",
+				"Package Control: Install Package"
+			],
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"ggraph",
+				"Git: Graph All"
+			],
+			[
+				"gpush",
+				"Git: Push"
+			],
+			[
+				"gcommit",
+				"Git: Commit"
+			],
+			[
+				"gadd...",
+				"Git: Add..."
+			],
+			[
+				"gunstage",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"gresetsta",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"gdiffcu",
+				"Git: Diff Current File"
+			],
+			[
+				"gstatus",
+				"Git: Status"
+			],
+			[
+				"gcommi",
+				"Git: Commit"
+			],
+			[
+				"ggrap",
+				"Git: Graph All"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"mater",
+				"Material Theme: Activate theme"
+			],
+			[
+				"thm",
+				"UI: Select Theme"
+			],
+			[
+				"gdiffc",
+				"Git: Diff Current File"
+			],
+			[
+				"gchec",
+				"Git: Checkout Current File"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"",
+				"Git: Add..."
+			],
+			[
+				"phpuni",
+				"Remote PHPUnit: Run unit tests"
+			],
+			[
+				"build",
+				"Build: New Build System"
+			],
+			[
+				"gitstatus",
+				"Git: Status"
+			],
+			[
+				"grapha",
+				"Git: Graph All"
+			],
+			[
+				"gaddc",
+				"Git: Add Current File"
+			],
+			[
+				"gad",
+				"Git: Add..."
+			],
+			[
+				"gcom",
+				"Git: Commit"
+			],
+			[
+				"mate",
+				"Material Theme: Activate theme"
+			],
+			[
+				"gdiffal",
+				"Git: Diff All Files"
+			],
+			[
+				"gitadd",
+				"Git: Add..."
+			],
+			[
+				"gitstat",
+				"Git: Status"
+			],
+			[
+				"ggraphall",
+				"Git: Graph All"
+			],
+			[
+				"gcomm",
+				"Git: Commit"
+			],
+			[
+				"gitadd..",
+				"Git: Add..."
+			],
+			[
+				"gitcommit",
+				"Git: Commit"
+			],
+			[
+				"gitadd...",
+				"Git: Add..."
+			],
+			[
+				"prefere",
+				"Preferences: Settings"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"comm",
+				"Git: Commit history"
+			],
+			[
+				"commi",
+				"Git: Commit history"
+			],
+			[
+				"gstaged",
+				"Git: Diff Staged Files"
+			],
+			[
+				"add...",
+				"Git: Add..."
+			],
+			[
+				"ggra",
+				"Git: Graph All"
+			],
+			[
+				"gsta",
+				"Git: Diff Staged Files"
+			],
+			[
+				"gad...",
+				"Git: Add..."
+			],
+			[
+				"pro",
+				"Project: Edit Project"
+			],
+			[
+				"prefer",
+				"Preferences: Browse Packages"
+			],
+			[
+				"gad..",
+				"Git: Add..."
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"unstage",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"gituns",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"gitdiff",
+				"Git: Diff All Files"
+			],
+			[
+				"packaisntall",
+				"Package Control: Install Package"
+			],
+			[
+				"set theme",
+				"UI: Select Theme"
+			]
+		],
+		"width": 696.0
+	},
+	"console":
+	{
+		"height": 427.0,
+		"history":
+		[
+			"exit",
+			"open .",
+			"open",
+			"cmd",
+			"dir"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Daniel/Code/pythondev",
+		"/C/Users/Daniel/Code/pythondev/acl",
+		"/C/Users/Daniel/Code/pythondev/inventario"
+	],
+	"file_history":
+	[
+		"/C/util/xampp/apache/logs/error.log",
+		"/C/util/xampp/apache/logs/access.log",
+		"/C/Users/Daniel/Code/pythondev/acl/admin.py",
+		"/C/Users/Daniel/Code/pythondev/acl/apps.py",
+		"/C/Users/Daniel/Code/pythondev/inventario/admin.py",
+		"/C/Users/Daniel/Code/pythondev/acl/models.py",
+		"/C/Users/Daniel/Code/pythondev/base/templates/app_menu_modulo.html",
+		"/C/Users/Daniel/Code/pythondev/base/templates/base_index.html",
+		"/C/Users/Daniel/Code/pythondev/inventario/models.py",
+		"/C/Users/Daniel/Code/pythondev/inventario/urls.py",
+		"/C/Users/Daniel/Code/pythondev/inventario/views.py",
+		"/C/Users/Daniel/Code/pythondev/inventario/templates/config.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/settings.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/urls.py",
+		"/C/Users/Daniel/Code/pythondev/polls/models.py",
+		"/C/Users/Daniel/Code/pythondev/polls/admin.py",
+		"/C/Users/Daniel/Code/pythondev/polls/urls.py",
+		"/C/Users/Daniel/Code/pythondev/polls/views.py",
+		"/C/Users/Daniel/Code/pythondev/polls/templates/polls/results.html",
+		"/C/Users/Daniel/Code/pythondev/polls/templates/polls/detail.html",
+		"/C/Users/Daniel/Code/pythondev/polls/templates/polls/index.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev.sublime-project",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/Daniel/Code/lara-dev/data/fija_detalle_inventario",
+		"/C/util/bin/env.cmd",
+		"//NAS017262/home/respaldo_oficina/util/putty/copy-sirio.bat",
+		"/C/Users/Daniel/Code/lara-dev/data/upload_inventario.bat",
+		"/C/util/bin/composer.bat",
+		"/C/util/bin/phpunit.bat",
+		"/C/util/bin/phpcs.bat",
+		"/C/util/composer.bat",
+		"/C/util/bin/mysql.bat",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/public/css/fix_bootstrap.css",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Inventario/Reporte/Reporte.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Inventario/Reporte/ReporteHoja.php",
+		"/C/util/xampp/php/php.ini",
+		"/C/util/xampp/mysql/bin/my.ini",
+		"/C/util/bin/php.bat",
+		"/C/util/xampp/apache/conf/httpd.conf",
+		"/C/util/xampp/apache/conf/extra/httpd-xampp.conf",
+		"/C/Users/Daniel/Code/lara-dev/data/upload_inventario.sql",
+		"/C/Users/Daniel/Code/lara-dev/data/fija_almacenes",
+		"/C/Users/Daniel/Code/lara-dev/data/fija_auditores",
+		"/C/Users/Daniel/Code/lara-dev/data/fija_inventarios",
+		"/C/Users/Daniel/Code/lara-dev/data/fija_familias",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/database/migrations/2018_02_14_204101_crea_tabla_fija_detalle_inventario.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Inventario/DetalleInventario.php",
+		"/C/Users/Daniel/Code/lara-dev/data/fija_centros",
+		"/C/Users/Daniel/Code/lara-dev/data/fija_catalogos",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/database/migrations/2018_02_12_141641_crea_tabla_fija_catalogos.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php",
+		"/C/Users/Daniel/Code/lara-dev/data/upload_inventario.sh",
+		"/C/Users/Daniel/Code/lara-dev/data/fija_tipo_ubicacion",
+		"/C/Users/Daniel/Code/lara-dev/data/fija_tipo_ubic_tipo_ubic",
+		"/C/Users/Daniel/Code/lara-dev/data/fija_tipos_inventario",
+		"/C/Users/Daniel/Code/lara-dev/data/fija_unidades",
+		"/C/Users/Daniel/Code/lara-dev/data/fija_usuarios",
+		"/C/Users/Daniel/Code/lara-dev/config_vagrant/bootstrap.sh",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/resources/views/orm/form_item.blade.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Acl/Modulo.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/resources/views/orm/orm_editar.blade.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/OrmModel/OrmModel.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/resources/views/orm/orm_listado.blade.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Http/Controllers/Inventario/ConfigController.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Http/Controllers/Acl/ConfigController.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Repositories/EloquentOrmModelRepository.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Http/Controllers/Orm/OrmController.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Repositories/OrmModelRepositoryInterface.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/routes/web.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/composer/autoload_classmap.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/composer/autoload_static.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/composer.json",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Usuario.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Column.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php",
+		"/C/util/php7/php.ini",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Repositories/OrmRepositoryInterface.php",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Repositories/EloquentOrmRepository.php",
+		"/C/util/bin/clink/config/prompt.lua",
+		"/C/util/bin/gitprompt.bat",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/bootstrap/app.php",
+		"/C/Users/Daniel/Desktop/from_cmd.txt",
+		"/C/Users/Daniel/Code/dotfiles/bash_prompt",
+		"/C/Users/Daniel/.bash_profile",
+		"/C/Users/Daniel/Downloads/updated_elcapitan_cursors_by_in_dolly-d9tjaf2/Install.inf",
+		"/C/util/bin/clink/config/settings",
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/init.bat",
+		"/C/util/bin/clink/config/clink.lua",
+		"/C/util/bin/clink/config/git_prompt.lua",
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink/clink.lua",
+		"/C/util/bin/clink/clink_inputrc_base",
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink-completions/cordova.lua",
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink-completions/.init.lua",
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink-completions/ssh.lua",
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink.lua",
+		"/C/Users/Daniel/Downloads/cmder_mini/config/settings",
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink/profile/settings",
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/user-aliases.cmd.example",
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/profile.ps1",
+		"/C/Users/Daniel/Downloads/cmder_mini/bin/alias.bat",
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink/CHANGES",
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink/.cmderver",
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink/profile/.history",
+		"/C/Users/Daniel/Downloads/cmder_mini/config/user-profile.cmd",
+		"/C/Users/Daniel/Downloads/cmder_mini/config/user-aliases.cmd",
+		"/C/Users/Daniel/Downloads/cmder_mini/bin/Readme.md",
+		"/C/Users/Daniel/Dropbox/lara-dev/.env",
+		"/C/Users/Daniel/.gitconfig",
+		"/C/Users/Daniel/Code/sirioweb/www/inv-fija/public/css/fix_bootstrap.css",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/public/css/estilo.css",
+		"/C/Users/Daniel/Code/lara-dev/Vagrantfile",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/laravel/framework/src/Illuminate/Foundation/Console/Presets/react-stubs/webpack.mix.js",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/util/php7/php.ini-development",
+		"/C/util/bin/php7/php.ini",
+		"/C/Users/Daniel/Code/lara-dev/www/lara/aa.txt",
+		"/C/Users/Daniel/Documents/Desarrollos/lara-dev/www/lara/app/Acl/App.php",
+		"/C/Users/Daniel/Documents/Desarrollos/lara-dev/lara.sublime-project",
+		"/C/Users/Daniel/Documents/Desarrollos/lara-dev/vagrant-ssh.bat",
+		"/C/Users/Daniel/Documents/Desarrollos/lara-dev/vagrant-suspend.bat",
+		"/C/Users/Daniel/Documents/Desarrollos/lara-dev/vagrant-up.bat",
+		"/C/Users/Daniel/Documents/Desarrollos/lara-dev/config_vagrant/bootstrap.sh",
+		"/C/util/bin/.bash_prompt",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/DocBlockr/README.md",
+		"/C/Users/Daniel/AppData/Roaming/Sublime Text 3/Packages/Git/Git.sublime-settings",
+		"/C/util/ConEmuPack/ConEmu/CmdInit.cmd"
+	],
+	"find":
+	{
+		"height": 105.0
+	},
+	"find_in_files":
+	{
+		"height": 237.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Rol",
+			"App",
+			"}}",
+			"')",
+			"}}",
+			"{{ asset('",
+			"Tipo_ubicacion",
+			"Tipo_inventario",
+			"pmp",
+			"almacen",
+			"python",
+			"Poll",
+			"poll",
+			"Almacen",
+			"question_id",
+			" '",
+			"PASSWORD"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "acl/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								202,
+								285
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 211.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "inventario/admin.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1945,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								246,
+								275
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "acl/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								830,
+								830
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/util/xampp/apache/conf/httpd.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17326,
+								17326
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 14989.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "test.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 146,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								146,
+								146
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 43.0
+	},
+	"input":
+	{
+		"height": 100.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 164.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pythondev.sublime-project",
+	"replace":
+	{
+		"height": 80.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				".css",
+				"Laravel\\public\\css\\fix_bootstrap.css"
+			],
+			[
+				"fijaal",
+				"Vagrant\\data\\fija_almacenes"
+			],
+			[
+				"credetallein",
+				"Laravel\\database\\migrations\\2018_02_14_204101_crea_tabla_fija_detalle_inventario.php"
+			],
+			[
+				"detalle",
+				"App\\Inventario\\DetalleInventario.php"
+			],
+			[
+				"fijacatal",
+				"Laravel\\database\\migrations\\2018_02_12_141641_crea_tabla_fija_catalogos.php"
+			],
+			[
+				"uploadin",
+				"Vagrant\\data\\upload_inventario.sql"
+			],
+			[
+				"fijaaudio",
+				"Vagrant\\data\\fija_auditores"
+			],
+			[
+				"uplodinve",
+				"Vagrant\\data\\upload_inventario.sh"
+			],
+			[
+				"boots",
+				"Vagrant\\config_vagrant\\bootstrap.sh"
+			],
+			[
+				"formite",
+				"Laravel\\resources\\views\\orm\\form_item.blade.php"
+			],
+			[
+				"editbla",
+				"Laravel\\resources\\views\\orm\\orm_editar.blade.php"
+			],
+			[
+				"ormmodel",
+				"App\\OrmModel\\OrmModel.php"
+			],
+			[
+				"lista",
+				"Laravel\\resources\\views\\orm\\orm_listado.blade.php"
+			],
+			[
+				"modulo",
+				"App\\Acl\\Modulo.php"
+			],
+			[
+				"compos",
+				"Laravel\\composer.json"
+			],
+			[
+				"web",
+				"Laravel\\routes\\web.php"
+			],
+			[
+				"ormcontroll",
+				"App\\Http\\Controllers\\Orm\\OrmController.php"
+			],
+			[
+				"ormmdeo",
+				"App\\OrmModel\\OrmModel.php"
+			],
+			[
+				"listdoblade",
+				"Laravel\\resources\\views\\orm\\orm_listado.blade.php"
+			],
+			[
+				"model",
+				"Composer\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php"
+			],
+			[
+				"schemacolumn",
+				"Composer\\doctrine\\dbal\\lib\\Doctrine\\DBAL\\Schema\\Column.php"
+			],
+			[
+				"composer",
+				"Laravel\\composer.json"
+			],
+			[
+				"builder",
+				"Composer\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php"
+			],
+			[
+				"elo",
+				"App\\Repositories\\EloquentOrmRepository.php"
+			],
+			[
+				"ormcontrol",
+				"App\\Http\\Controllers\\Orm\\OrmController.php"
+			],
+			[
+				"fix",
+				"Laravel\\public\\css\\fix_bootstrap.css"
+			],
+			[
+				"webpa",
+				"Composer\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Presets\\react-stubs\\webpack.mix.js"
+			],
+			[
+				"app",
+				"App\\Acl\\App.php"
+			],
+			[
+				"collectio",
+				"Composer\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php"
+			],
+			[
+				"appnav",
+				"Laravel\\resources\\views\\common\\app_navbar.blade.php"
+			],
+			[
+				"layoutbla",
+				"Laravel\\resources\\views\\common\\app_layout.blade.php"
+			],
+			[
+				"aclconfigco",
+				"App\\Http\\Controllers\\Acl\\ConfigController.php"
+			],
+			[
+				"ormfieldhasma",
+				"App\\OrmModel\\OrmField\\OrmFieldHasMany.php"
+			],
+			[
+				"hasmul",
+				"App\\OrmModel\\hasMultiKey.php"
+			],
+			[
+				"hasman",
+				"Composer\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Relations\\HasMany.php"
+			],
+			[
+				"compo.lo",
+				"Laravel\\composer.lock"
+			],
+			[
+				"useracl",
+				"App\\Acl\\UserACL.php"
+			],
+			[
+				"aclconfigcot",
+				"App\\Http\\Controllers\\Acl\\ConfigController.php"
+			],
+			[
+				"ormlistado",
+				"Laravel\\resources\\views\\orm\\orm_listado.blade.php"
+			],
+			[
+				"audit",
+				"App\\Inventario\\Auditor.php"
+			],
+			[
+				"invenconfigcon",
+				"App\\Http\\Controllers\\Inventario\\ConfigController.php"
+			],
+			[
+				"ormcontrolle",
+				"App\\Http\\Controllers\\Orm\\OrmController.php"
+			],
+			[
+				"interface",
+				"Composer\\phpunit\\phpunit-mock-objects\\tests\\Generator\\interface.phpt"
+			],
+			[
+				"ormforitem",
+				"Laravel\\resources\\views\\orm\\form_item.blade.php"
+			],
+			[
+				"ormblade",
+				"Laravel\\resources\\views\\orm\\orm_editar.blade.php"
+			],
+			[
+				"editblade",
+				"Laravel\\resources\\views\\inventario\\editar.blade.php"
+			],
+			[
+				"configcontro",
+				"App\\Http\\Controllers\\Inventario\\ConfigController.php"
+			],
+			[
+				"audi",
+				"App\\Inventario\\Auditor.php"
+			],
+			[
+				"inven",
+				"App\\Inventario\\Inventario.php"
+			],
+			[
+				"inventarioconfig",
+				"App\\Http\\Controllers\\Inventario\\ConfigController.php"
+			],
+			[
+				"toaconfigco",
+				"App\\Http\\Controllers\\Toa\\ConfigController.php"
+			],
+			[
+				"usua",
+				"App\\Usuario.php"
+			],
+			[
+				"eloqmodel",
+				"Composer\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php"
+			],
+			[
+				"ormcon",
+				"App\\Http\\Controllers\\Orm\\OrmController.php"
+			],
+			[
+				"ormconto",
+				"App\\Http\\Controllers\\Orm\\OrmController.php"
+			],
+			[
+				"ormconro",
+				"App\\Http\\Controllers\\Orm\\OrmController.php"
+			],
+			[
+				"mysql",
+				"Composer\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php"
+			],
+			[
+				"listblad",
+				"Laravel\\resources\\views\\orm\\orm_listado.blade.php"
+			],
+			[
+				"rol",
+				"App\\Acl\\Rol.php"
+			],
+			[
+				"eloquentmodel",
+				"Composer\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php"
+			],
+			[
+				"reporte",
+				"App\\Inventario\\Reporte\\Reporte.php"
+			],
+			[
+				"querbuild",
+				"Composer\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php"
+			],
+			[
+				"reportejaus",
+				"App\\Inventario\\Reporte\\ReporteAjustes.php"
+			],
+			[
+				"reportehoja",
+				"App\\Inventario\\Reporte\\ReporteHoja.php"
+			],
+			[
+				"test.php",
+				"Laravel\\tests\\Acl\\RolTest.php"
+			],
+			[
+				"ubicaci",
+				"App\\Inventario\\TipoUbicacion.php"
+			],
+			[
+				"ubicac",
+				"App\\Inventario\\TipoUbicacion.php"
+			],
+			[
+				"reporteblade",
+				"Laravel\\resources\\views\\inventario\\reporte.blade.php"
+			],
+			[
+				"lay",
+				"Laravel\\resources\\views\\common\\app_layout.blade.php"
+			],
+			[
+				"blade",
+				"Laravel\\resources\\views\\layouts\\app.blade.php"
+			],
+			[
+				"viewinve",
+				"Laravel\\public\\js\\view_inventario.js"
+			],
+			[
+				"viewin",
+				"Laravel\\public\\js\\view_inventario.js"
+			],
+			[
+				"inventarioblade",
+				"Laravel\\resources\\views\\inventario\\inventario.blade.php"
+			],
+			[
+				"inventarioeditarblade",
+				"Laravel\\resources\\views\\inventario\\editar.blade.php"
+			],
+			[
+				"ormcontro",
+				"App\\Http\\Controllers\\Orm\\OrmController.php"
+			],
+			[
+				"inventarioinventarblade",
+				"Laravel\\resources\\views\\inventario\\inventario.blade.php"
+			],
+			[
+				"invedigi",
+				"App\\Http\\Controllers\\Inventario\\DigitacionController.php"
+			],
+			[
+				".env",
+				"Laravel\\.env"
+			],
+			[
+				"tipoclas",
+				"App\\Stock\\TipoClasifAlmacenSap.php"
+			],
+			[
+				"empresa",
+				"App\\Toa\\Empresa.php"
+			],
+			[
+				"toaciudadsee",
+				"Laravel\\database\\seeds\\TablaToaCiudadesSeeder.php"
+			],
+			[
+				"toaempresasee",
+				"Laravel\\database\\seeds\\TablaToaEmpresasSeeder.php"
+			],
+			[
+				"toa/empresac",
+				"App\\Toa\\EmpresaCiudad.php"
+			],
+			[
+				"toaempresasciudad",
+				"Laravel\\database\\seeds\\TablaToaEmpresasCiudadesSeeder.php"
+			],
+			[
+				"almaseed",
+				"Laravel\\database\\seeds\\TablaCpAlmacenesSeeder.php"
+			],
+			[
+				"tipoclasif",
+				"App\\Stock\\TipoClasifAlmacenSap.php"
+			],
+			[
+				"data",
+				"Laravel\\database\\seeds\\DatabaseSeeder.php"
+			],
+			[
+				"clasifalm",
+				"App\\Stock\\ClasifAlmacenSap.php"
+			],
+			[
+				"clasifalmsee",
+				"Laravel\\database\\seeds\\TablaCpClasifalmSeeder.php"
+			],
+			[
+				"tipclas",
+				"Laravel\\database\\seeds\\TablaCpTipoClasifalmSeeder.php"
+			],
+			[
+				"tipoalma",
+				"App\\Stock\\TipoAlmacenSap.php"
+			],
+			[
+				"almaceneseed",
+				"Laravel\\database\\seeds\\TablaCpAlmacenesSeeder.php"
+			],
+			[
+				"tiposalmsee",
+				"Laravel\\database\\seeds\\TablaCpTiposalmSeeder.php"
+			],
+			[
+				"almacenseed",
+				"Laravel\\database\\seeds\\TablaCpAlmacenesSeeder.php"
+			],
+			[
+				"almasap",
+				"App\\Stock\\AlmacenSap.php"
+			],
+			[
+				"cpalmacen",
+				"Laravel\\database\\seeds\\TablaCpAlmacenesSeeder.php"
+			],
+			[
+				"cpalmace",
+				"Laravel\\database\\seeds\\TablaCpAlmacenesSeeder.php"
+			],
+			[
+				"cpcmv",
+				"Laravel\\database\\seeds\\TablaCpCmvSeeder.php"
+			],
+			[
+				"cpcmvse",
+				"Laravel\\database\\seeds\\TablaCpCmvSeeder.php"
+			],
+			[
+				"usuariossee",
+				"Laravel\\database\\seeds\\TablaCpUsuariosSeeder.php"
+			],
+			[
+				"usuariosa",
+				"App\\Stock\\UsuarioSap.php"
+			],
+			[
+				"dataseed",
+				"Laravel\\database\\seeds\\DatabaseSeeder.php"
+			],
+			[
+				"stockprove",
+				"App\\Stock\\Proveedor.php"
+			],
+			[
+				"cpprove",
+				"Laravel\\database\\seeds\\TablaCpProveedoresSeeder.php"
+			],
+			[
+				"invencontrolle",
+				"App\\Http\\Controllers\\Inventario\\ConfigController.php"
+			],
+			[
+				"cata",
+				"App\\Inventario\\Catalogo.php"
+			],
+			[
+				"detalleinven",
+				"App\\Inventario\\DetalleInventario.php"
+			],
+			[
+				"detalleinveseed",
+				"Laravel\\database\\seeds\\TablaFijaDetalleInventarioSeeder.php"
+			],
+			[
+				"unida",
+				"App\\Inventario\\UnidadMedida.php"
+			],
+			[
+				"fijaunidadsee",
+				"Laravel\\database\\seeds\\TablaFijaUnidadesSeeder.php"
+			],
+			[
+				"fijaalmacenessee",
+				"Laravel\\database\\seeds\\TablaFijaAlmacenesSeeder.php"
+			],
+			[
+				"fijacentrossee",
+				"Laravel\\database\\seeds\\TablaFijaCentrosSeeder.php"
+			],
+			[
+				"tipoubi",
+				"Laravel\\database\\seeds\\TablaFijaTipoUbicacionSeeder.php"
+			],
+			[
+				"collec",
+				"Composer\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php"
+			],
+			[
+				"tablafijainesee",
+				"Laravel\\database\\seeds\\TablaFijaInventariosSeeder.php"
+			],
+			[
+				"tipoin",
+				"App\\Inventario\\TipoInventario.php"
+			],
+			[
+				"modelfa",
+				"Laravel\\database\\factories\\ModelFactory.php"
+			],
+			[
+				"tipoinven",
+				"App\\Inventario\\TipoInventario.php"
+			],
+			[
+				"fijaseed",
+				"Laravel\\database\\seeds\\TablaFijaFamiliasSeeder.php"
+			],
+			[
+				"fijatipos",
+				"Laravel\\database\\seeds\\TablaFijaTiposInventarioSeeder.php"
+			],
+			[
+				"databassee",
+				"Laravel\\database\\seeds\\DatabaseSeeder.php"
+			],
+			[
+				"toac",
+				"Laravel\\database\\seeds\\TablaToaCiudadesSeeder.php"
+			],
+			[
+				"tipostra",
+				"Laravel\\database\\seeds\\TablaToaTiposTrabajoSeeder.php"
+			],
+			[
+				"tiptr",
+				"App\\Toa\\TipoTrabajo.php"
+			],
+			[
+				"toatipma",
+				"Laravel\\database\\seeds\\TablaToaTipMaterialTrabajoSeeder.php"
+			],
+			[
+				"timateriatra",
+				"App\\Toa\\TipMaterialTrabajo.php"
+			],
+			[
+				"toatecnicos",
+				"Laravel\\database\\migrations\\2018_02_13_131120_crea_tabla_toa_tecnicos.php"
+			],
+			[
+				"toatec",
+				"Laravel\\database\\seeds\\TablaToaTecnicosSeeder.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 387.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
