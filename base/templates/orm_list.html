@@ -1,0 +1,43 @@
+{% extends "base_index.html" %}
+
+{% block modulo %}
+<div class="row hidden-print">
+<form menthod="get" class="form-search">
+    <div class="col-md-3 col-sm-5 col-xs-6">
+        <div class="input-group input-group-sm">
+            <input type="text" value="" class="form-control" id="filtro" maxlength="30" placeholder="Filtrar...">
+            <span class="input-group-btn">
+                <button type="submit" id="btn_filtro" class="btn btn-default">
+                    <span class="fa fa-search"></span>
+                </button>
+            </span>
+        </div>
+    </div>
+
+    <div class="col-md-9 col-sm-7 col-xs-6 text-right">
+        <a href="" class="btn btn-primary" id="btn_mostrar_agregar" role="button">
+            <span class="fa fa-plus-circle"></span>
+            Nuevo
+            {{ model_name|lower }}
+        </a>
+    </div>
+</form>
+</div>
+
+<div>
+    <table class="table table-hover table-condensed">
+        {% block orm_list %}{% endblock %}
+    </table>
+    {% include "app_paginated.html" %}
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    if ($('#filtro').val() != '') {
+        $('#filtro').addClass('search_found');
+        $('#btn_filtro').removeClass('btn-default');
+        $('#btn_filtro').addClass('btn-primary');
+    }
+});
+</script>
+{% endblock %}

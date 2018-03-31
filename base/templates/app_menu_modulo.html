@@ -1,15 +1,18 @@
+{% if menu_modulo %}
 <div class="row">
     <!-- ============================== MENU MODULO ============================== -->
     <div class="col-md-2">
     <ul class="nav nav-stacked nav-sidebar hidden-print">
-        @foreach ($menuModulo as $modulo => $moduloProps)
-        <li class="{{ $modulo === $moduloSelected ? 'active' : '' }}">
-            <a href="{{ $moduloProps['url'] }}">
-                <span class="fa fa-{{ $moduloProps['icono'] }} fa-fw"></span> {{ $moduloProps['nombre'] }}
+        {% for menu_item in menu_modulo %}
+        <li class="">
+            <a href="{{ menu_item.url }}">
+                <i class="fa fa-{{ menu_item.icon }} fa-fw"></i>
+                {{ menu_item.nombre }}
             </a>
             </li>
-        @endforeach
+        {% endfor %}
     </ul>
     </div>
     <!-- ============================== /MENU MODULO ============================== -->
     <div class="col-md-10">
+{% endif %}

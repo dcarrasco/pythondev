@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>inv fija</title>
+    <title>{{ app_title }}</title>
 
     <link rel="icon" href="{% static "img/favicon.png" %}" type="image/png" />
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{% static "img/favicon-152.png" %}">
@@ -38,23 +38,19 @@
 <body>
 
 <div class="container-fluid" id="container">
-
+{% include "app_navbar.html" %}
 {% include "app_menu_modulo.html" %}
-
-{% block app_menu_modulo %}
-{% endblock %}
-@include('common.app_menu_modulo')
-
-@include('common.alert')
+{% include "app_alert.html" %}
 
 <!-- ============================== MODULOS APP ============================== -->
-@yield('modulo')
+{% block modulo %}
+{% endblock %}
 <!-- ============================== /MODULOS APP ============================== -->
 
-@if (isset($modelList))
+{% if menu_modulo %}
     </div> <!-- DIV   class="col-md-10" -->
     </div> <!-- DIV   class="row"    -->
-@endif
+{% endif %}
 
 </div> <!-- DIV principal de la aplicacion   class="container"-->
 

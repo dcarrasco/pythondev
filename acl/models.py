@@ -1,5 +1,5 @@
 from django.db import models
-
+from pythondev.helpers import Collection
 # Create your models here.
 
 class App(models.Model):
@@ -61,3 +61,41 @@ class Modulo(models.Model):
 
 #     class Meta:
 #         db_table = "acl_rol_modulo"
+
+class AppHelper:
+    def app_menu():
+        modulos = Collection(Rol.objects.all()).flatmap(
+            lambda rol: list(rol.modulos.all())
+        ).map(lambda modulo: {
+            'orden': str(modulo.app.orden)+'.'+str(modulo.orden),
+            'app_app': modulo.app.app,
+            'app_icono': modulo.app.icono,
+            'app_selected': False,
+            'mod_modulo': modulo.modulo,
+            'mod_llave_modulo': modulo.llave_modulo,
+            'mod_icono': modulo.icono,
+            'mod_url': modulo.url,
+            'mod_selected': False,
+        }).sort(
+            lambda item: item['orden']
+        ).all()
+
+        menu = dict()
+        for modulo in modulos:
+            if modulo['app_app'] in menu:
+                menu[modulo['app_app']]['modulos'].append({
+                    'modulo': modulo['mod_modulo'],
+                    'llave_modulo': modulo['mod_llave_modulo'],
+                    'icono': modulo['mod_icono'],
+                    'url': modulo['mod_url'],
+                    'selected': modulo['mod_selected'],
+                })
+            else:
+                menu[modulo['app_app']] = {
+                    'app': modulo['app_app'],
+                    'icono': modulo['app_icono'],
+                    'selected': modulo['app_selected'],
+                    'modulos': list(),
+                }
+
+        return menu
