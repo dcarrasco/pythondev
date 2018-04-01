@@ -1,0 +1,24 @@
+{% extends "orm_list.html" %}
+
+{% block orm_list %}
+    <thead>
+        <tr>
+            <th>Auditor</th>
+            <th>Activo</th>
+            <th class="text-center"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for auditor in auditor_list %}
+        <tr>
+            <td>{{ auditor.nombre }}</td>
+            <td>{{ auditor.activo|yesno:"Si,No" }}</td>
+            <td class="text-center">
+                <a href="" class="">
+                    editar
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+{% endblock %}
