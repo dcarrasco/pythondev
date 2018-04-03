@@ -2,11 +2,11 @@ from django.urls import path
 
 from .views import *
 
-app_name = 'inventario'
 urlpatterns = [
     path('config', config, name='config'),
-    path('config/auditores', AuditorList.as_view()),
-    path('config/familias', FamiliaList.as_view()),
-    path('config/catalogos', CatalogoList.as_view()),
-    path('config/tipos_inventario', TipoInventarioList.as_view()),
+    path('config/auditor', AuditorList.as_view(), name='auditor_list'),
+    path('config/auditor/<pk>', AuditorDetail.as_view(), name='auditor_edit'),
+    path('config/familia', FamiliaList.as_view()),
+    path('config/catalogo', CatalogoList.as_view()),
+    path('config/tipo_inventario', TipoInventarioList.as_view()),
 ]

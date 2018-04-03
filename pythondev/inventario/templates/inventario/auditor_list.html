@@ -14,7 +14,7 @@
             <td>{{ auditor.nombre }}</td>
             <td>{{ auditor.activo|yesno:"Si,No" }}</td>
             <td class="text-center">
-                <a href="" class="">
+                <a href="{% url 'auditor_edit' auditor.id %}" class="">
                     editar
                 </a>
             </td>

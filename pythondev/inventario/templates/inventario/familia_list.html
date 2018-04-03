@@ -13,7 +13,7 @@
         {% for familia in familia_list %}
         <tr>
             <td>{{ familia.codigo }}</td>
-            <td>{{ familia.tipo }}</td>
+            <td>{{ familia.get_tipo_display }}</td>
             <td>{{ familia.nombre }}</td>
             <td class="text-center">
                 <a href="" class="">

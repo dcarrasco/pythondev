@@ -1,4 +1,4 @@
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from django.template.loader import get_template
 from ..base.models import AppRender, OrmList
 from ..acl.models import AppHelper
@@ -9,6 +9,14 @@ PER_PAGE = 10
 class AuditorList(ListView):
     model = Auditor
     paginate_by = PER_PAGE
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return {**context, **app_context(Auditor)}
+
+
+class AuditorDetail(DetailView):
+    model = Auditor
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -52,10 +60,10 @@ def app_context(model):
 
 def get_menu_config():
     return [
-        {'url': 'auditores', 'nombre': 'Auditor', 'icon': 'user'},
-        {'url': 'familias', 'nombre': 'Familia', 'icon': 'th'},
-        {'url': 'catalogos', 'nombre': 'Catalogo', 'icon': 'barcode'},
-        {'url': 'tipos_inventario', 'nombre': 'Tipo_inventario', 'icon': 'th'},
+        {'url': 'auditor', 'nombre': 'Auditor', 'icon': 'user'},
+        {'url': 'familia', 'nombre': 'Familia', 'icon': 'th'},
+        {'url': 'catalogo', 'nombre': 'Catalogo', 'icon': 'barcode'},
+        {'url': 'tipo_inventario', 'nombre': 'Tipo_inventario', 'icon': 'th'},
         {'url': 'Inventario', 'nombre': 'Inventario', 'icon': 'list'},
         {'url': 'Tipo_ubicacion', 'nombre': 'Tipo_ubicacion', 'icon': 'th'},
         {'url': 'Centro', 'nombre': 'Centro', 'icon': 'th'},
