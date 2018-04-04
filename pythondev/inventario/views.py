@@ -1,4 +1,4 @@
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, UpdateView
 from django.template.loader import get_template
 from ..base.models import AppRender, OrmList
 from ..acl.models import AppHelper
@@ -15,8 +15,9 @@ class AuditorList(ListView):
         return {**context, **app_context(Auditor)}
 
 
-class AuditorDetail(DetailView):
+class AuditorUpdate(UpdateView):
     model = Auditor
+    fields = ['nombre', 'activo']
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
