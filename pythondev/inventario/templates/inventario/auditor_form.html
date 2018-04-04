@@ -1,6 +1,7 @@
-{% extends "orm_list.html" %}
+{% extends "orm_detail.html" %}
 
-{% block orm_list %}
+{% block orm_form %}
+ {{ form.as_p }}
     <thead>
         <tr>
             <th>Auditor</th>
@@ -14,7 +15,7 @@
             <td>{{ auditor.nombre }}</td>
             <td>{{ auditor.activo|yesno:"Si,No" }}</td>
             <td class="text-center">
-                <a href="{% url 'auditor_update' auditor.id %}" class="">
+                <a href="{% url 'auditor_edit' auditor.id %}" class="">
                     editar
                 </a>
             </td>
