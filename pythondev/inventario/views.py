@@ -3,6 +3,7 @@ from django.template.loader import get_template
 from ..base.models import AppRender, OrmList
 from ..acl.models import AppHelper
 from .models import Auditor, Familia, Catalogo, Tipo_inventario
+from .forms import AuditorForm
 
 PER_PAGE = 10
 
@@ -17,7 +18,8 @@ class AuditorList(ListView):
 
 class AuditorUpdate(UpdateView):
     model = Auditor
-    fields = ['nombre', 'activo']
+    form_class = AuditorForm
+    template_name = 'generic_form.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
