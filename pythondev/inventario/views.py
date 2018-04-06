@@ -11,10 +11,8 @@ from .models import (
 )
 from .forms import AuditorForm
 
-PER_PAGE = 10
-
 class OrmListView(ListView):
-    paginate_by = PER_PAGE
+    paginate_by = 10
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -89,18 +87,12 @@ def get_menu_config(model):
         {'model': 'Unidad_medida', 'icon': 'balance-scale'},
     ]
 
-    menu_final = []
     for menu_item in menu:
-        menu_item['activo'] = 'active' if model.__name__==menu_item['model'] else ''
         class_ = getattr(importlib.import_module('pythondev.inventario.models'), menu_item['model'])
+        menu_item['activo'] = 'active' if model.__name__==menu_item['model'] else ''
         menu_item['url'] = reverse(menu_item['model'].lower()+'_list')
         menu_item['nombre'] = class_()._meta.verbose_name.capitalize()
 
     return menu
 
 
-def config(request):
-    context = {
-        'menu_modulo': get_menu_config(),
-    }
-    return AppRender.app_render(request, 'config.html', context)
