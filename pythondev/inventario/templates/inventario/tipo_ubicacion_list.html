@@ -1,0 +1,24 @@
+{% extends "orm_list.html" %}
+
+{% block orm_list %}
+    <thead>
+        <tr>
+            <th>Tipo de inventario</th>
+            <th>Tipo de ubicacion</th>
+            <th class="text-center"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for tipo_ubicacion in tipo_ubicacion_list %}
+        <tr>
+            <td>{{ tipo_ubicacion.tipo_inventario }}</td>
+            <td>{{ tipo_ubicacion.tipo_ubicacion }}</td>
+            <td class="text-center">
+                <a href="" class="">
+                    editar
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+{% endblock %}

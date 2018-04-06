@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"mode",
+				"model_name"
+			],
+			[
+				"get",
+				"get_context_data"
+			],
+			[
 				"con",
 				"context"
 			],
@@ -58,10 +66,6 @@
 			[
 				"git_",
 				"git_has_uncommited"
-			],
-			[
-				"get",
-				"get_git_branch"
 			],
 			[
 				"get_git",
@@ -135,37 +139,16 @@
 			"file": "pythondev/inventario/views.py",
 			"settings":
 			{
-				"buffer_size": 2398,
+				"buffer_size": 3044,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "from django.urls import path\n\nfrom .views import *\n\nurlpatterns = [     path('config', config, name='config'),\npath('config/auditor', AuditorList.as_view(), name='auditor_list'),\npath('config/auditor/<pk>', AuditorDetail.as_view(), name='auditor_edit'),\npath('config/familia', FamiliaList.as_view()),     path('config/catalogo',\nCatalogoList.as_view()),     path('config/tipo_inventario',\nTipoInventarioList.as_view()), ]\n",
 			"file": "pythondev/inventario/urls.py",
-			"file_size": 446,
-			"file_write_time": 131671026445151577,
 			"settings":
 			{
-				"buffer_size": 422,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pythondev/base/models.py",
-			"settings":
-			{
-				"buffer_size": 504,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pythondev/inventario/templates/inventario/catalogo_list.html",
-			"settings":
-			{
-				"buffer_size": 718,
+				"buffer_size": 510,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -569,28 +552,32 @@
 	"expanded_folders":
 	[
 		"/C/Users/Daniel/Code/pythondev",
-		"/C/Users/Daniel/Code/pythondev/config",
 		"/C/Users/Daniel/Code/pythondev/pythondev",
 		"/C/Users/Daniel/Code/pythondev/pythondev/__pycache__",
-		"/C/Users/Daniel/Code/pythondev/pythondev/base",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/migrations",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates"
 	],
 	"file_history":
 	[
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/catalogo_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/base/models.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/templates/orm_detail.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/auditor_list.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/templates/base_index.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/views.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/urls.py",
+		"/C/Users/Daniel/Code/pythondev/config/settings.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/auditor_form.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/orm_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/templates/base_index.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/models.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/familia_list.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/tipo_inventario_list.html",
 		"/C/Users/Daniel/Code/pythondev/manage.py",
-		"/C/Users/Daniel/Code/pythondev/pythondev/base/models.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/app_menu_modulo.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/app_paginated.html",
-		"/C/Users/Daniel/Code/pythondev/config/settings.py",
 		"/C/Users/Daniel/Code/pythondev/config/urls.py",
 		"/C/Users/Daniel/Code/pythondev/inventario/models.py",
 		"/C/Users/Daniel/Code/pythondev/inventario/views.py",
@@ -702,16 +689,11 @@
 		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink/clink.lua",
 		"/C/util/bin/clink/clink_inputrc_base",
 		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink-completions/cordova.lua",
-		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink-completions/.init.lua",
-		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink-completions/ssh.lua",
-		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink.lua",
-		"/C/Users/Daniel/Downloads/cmder_mini/config/settings",
-		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink/profile/settings",
-		"/C/Users/Daniel/Downloads/cmder_mini/vendor/user-aliases.cmd.example"
+		"/C/Users/Daniel/Downloads/cmder_mini/vendor/clink-completions/.init.lua"
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 45.0
 	},
 	"find_in_files":
 	{
@@ -726,6 +708,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"model",
+			"BASE_DIR",
 			"settings.py",
 			"auditor",
 			"Catalogo",
@@ -784,7 +768,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -793,15 +777,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2398,
+						"buffer_size": 3044,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								541,
-								541
+								362,
+								362
 							]
 						],
 						"settings":
@@ -812,10 +796,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 289.0,
+						"translation.y": 342.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -824,15 +808,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 422,
+						"buffer_size": 510,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								421,
-								421
+								116,
+								116
 							]
 						],
 						"settings":
@@ -844,68 +828,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "pythondev/base/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 504,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								501,
-								501
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "pythondev/inventario/templates/inventario/catalogo_list.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 718,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								506,
-								506
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -913,7 +836,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 43.0
+		"height": 45.0
 	},
 	"input":
 	{
@@ -958,7 +881,7 @@
 	"project": "pythondev.sublime-project",
 	"replace":
 	{
-		"height": 80.0
+		"height": 84.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -967,6 +890,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"basine",
+				"pythondev\\templates\\base_index.html"
+			],
 			[
 				"orml",
 				"pythondev\\templates\\orm_list.html"
@@ -1474,10 +1401,6 @@
 			[
 				"tiptr",
 				"App\\Toa\\TipoTrabajo.php"
-			],
-			[
-				"toatipma",
-				"Laravel\\database\\seeds\\TablaToaTipMaterialTrabajoSeeder.php"
 			]
 		],
 		"width": 0.0

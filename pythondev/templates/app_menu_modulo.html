@@ -4,7 +4,7 @@
     <div class="col-md-2">
     <ul class="nav nav-stacked nav-sidebar hidden-print">
         {% for menu_item in menu_modulo %}
-        <li class="">
+        <li class="{{ menu_item.activo }}">
             <a href="{{ menu_item.url }}">
                 <i class="fa fa-{{ menu_item.icon }} fa-fw"></i>
                 {{ menu_item.nombre }}

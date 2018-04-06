@@ -1,19 +1,28 @@
 from django.views.generic import ListView, UpdateView
 from django.template.loader import get_template
+from django.urls import reverse
+import importlib
+
 from ..base.models import AppRender, OrmList
 from ..acl.models import AppHelper
-from .models import Auditor, Familia, Catalogo, Tipo_inventario
+from .models import (
+    Auditor, Familia, Catalogo, Tipo_inventario, Inventario, Tipo_ubicacion,
+    Centro, Almacen, Unidad_medida
+)
 from .forms import AuditorForm
 
 PER_PAGE = 10
 
-class AuditorList(ListView):
-    model = Auditor
+class OrmListView(ListView):
     paginate_by = PER_PAGE
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        return {**context, **app_context(Auditor)}
+        return {**context, **app_context(self.model)}
+
+
+class AuditorList(OrmListView):
+    model = Auditor
 
 
 class AuditorUpdate(UpdateView):
@@ -26,53 +35,68 @@ class AuditorUpdate(UpdateView):
         return {**context, **app_context(Auditor)}
 
 
-class FamiliaList(ListView):
+class FamiliaList(OrmListView):
     model = Familia
-    paginate_by = PER_PAGE
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return {**context, **app_context(Familia)}
 
 
-class CatalogoList(ListView):
+class CatalogoList(OrmListView):
     model = Catalogo
-    paginate_by = PER_PAGE
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return {**context, **app_context(Catalogo)}
 
 
-class TipoInventarioList(ListView):
+class TipoInventarioList(OrmListView):
     model = Tipo_inventario
-    paginate_by = PER_PAGE
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return {**context, **app_context(Tipo_inventario)}
+
+class InventarioList(OrmListView):
+    model = Inventario
+
+
+class TipoUbicacionList(OrmListView):
+    model = Tipo_ubicacion
+
+
+class CentroList(OrmListView):
+    model = Centro
+
+
+class AlmacenList(OrmListView):
+    model = Almacen
+
+
+class UnidadMedidaList(OrmListView):
+    model = Unidad_medida
 
 
 def app_context(model):
     return {
-        'menu_modulo': get_menu_config(),
+        'menu_modulo': get_menu_config(model),
         'app_menu': AppHelper.app_menu(),
         'model_name': model._meta.verbose_name,
+        'xxx': model.__name__,
     }
 
 
-def get_menu_config():
-    return [
-        {'url': 'auditor', 'nombre': 'Auditor', 'icon': 'user'},
-        {'url': 'familia', 'nombre': 'Familia', 'icon': 'th'},
-        {'url': 'catalogo', 'nombre': 'Catalogo', 'icon': 'barcode'},
-        {'url': 'tipo_inventario', 'nombre': 'Tipo_inventario', 'icon': 'th'},
-        {'url': 'Inventario', 'nombre': 'Inventario', 'icon': 'list'},
-        {'url': 'Tipo_ubicacion', 'nombre': 'Tipo_ubicacion', 'icon': 'th'},
-        {'url': 'Centro', 'nombre': 'Centro', 'icon': 'th'},
-        {'url': 'Almacen', 'nombre': 'Almacen', 'icon': 'home'},
-        {'url': 'Unidad_medida', 'nombre': 'Unidad_medida', 'icon': 'balance-scale'},
+def get_menu_config(model):
+    menu = [
+        {'model': 'Auditor', 'icon': 'user'},
+        {'model': 'Familia', 'icon': 'th'},
+        {'model': 'Catalogo', 'icon': 'barcode'},
+        {'model': 'Tipo_inventario', 'icon': 'th'},
+        {'model': 'Inventario', 'icon': 'list'},
+        {'model': 'Tipo_ubicacion', 'icon': 'th'},
+        {'model': 'Centro', 'icon': 'th'},
+        {'model': 'Almacen', 'icon': 'home'},
+        {'model': 'Unidad_medida', 'icon': 'balance-scale'},
     ]
+
+    menu_final = []
+    for menu_item in menu:
+        menu_item['activo'] = 'active' if model.__name__==menu_item['model'] else ''
+        class_ = getattr(importlib.import_module('pythondev.inventario.models'), menu_item['model'])
+        menu_item['url'] = reverse(menu_item['model'].lower()+'_list')
+        menu_item['nombre'] = class_()._meta.verbose_name.capitalize()
+
+    return menu
 
 
 def config(request):
