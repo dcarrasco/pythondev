@@ -70,7 +70,6 @@ def app_context(model):
         'menu_modulo': get_menu_config(model),
         'app_menu': AppHelper.app_menu(),
         'model_name': model._meta.verbose_name,
-        'xxx': model.__name__,
     }
 
 
