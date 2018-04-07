@@ -16,7 +16,7 @@
             <td>{{ familia.get_tipo_display }}</td>
             <td>{{ familia.nombre }}</td>
             <td class="text-center">
-                <a href="" class="">
+                <a href="{% url 'familia_update' familia.codigo %}" class="">
                     editar
                 </a>
             </td>

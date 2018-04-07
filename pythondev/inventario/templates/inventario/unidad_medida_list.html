@@ -14,7 +14,7 @@
             <td>{{ unidad_medida.unidad }}</td>
             <td>{{ unidad_medida.desc_unidad }}</td>
             <td class="text-center">
-                <a href="" class="">
+                <a href="{% url 'unidad_medida_update' unidad_medida.unidad %}" class="">
                     editar
                 </a>
             </td>

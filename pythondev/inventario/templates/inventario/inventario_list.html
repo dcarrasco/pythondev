@@ -16,7 +16,7 @@
             <td>{{ inventario.activo|yesno:"Si,No" }}</td>
             <td>{{ inventario.tipo_inventario }}</td>
             <td class="text-center">
-                <a href="" class="">
+                <a href="{% url 'inventario_update' inventario.id %}" class="">
                     editar
                 </a>
             </td>

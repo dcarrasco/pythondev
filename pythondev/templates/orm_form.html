@@ -1,0 +1,45 @@
+{% extends "base_index.html" %}
+
+{% block modulo %}
+<div class="row">
+    <div class="col-md-10 col-md-offset-1 well">
+
+        <form id='frm_editar' class='form-horizontal' role='form' method="post">
+        {% csrf_token %}
+
+        <fieldset>
+            <legend>{{ label_accion|capfirst }} {{ model_name|lower }}</legend>
+
+            {% block generic_form %}{% endblock %}
+
+            <div class="form-group">
+                <label class="control-label col-sm-4"></label>
+
+                <div class="col-sm-8">
+                    <div class="pull-right">
+                        <button type="submit" class="btn btn-primary">
+                            <span class="fa fa-check"></span> {{ label_accion|capfirst }}
+                        </button>
+
+                        <a href="{{ url_cancelar }}" class="btn btn-default" role="button">
+                            <span class="fa fa-ban"></span> {{ label_cancelar|capfirst }}
+                        </a>
+                    </div>
+                    </form>
+
+                    {% if label_accion == 'modificar' %}
+                    <div class="pull-left">
+                        <a href="{% url url_borrar object.pk %}" class="btn btn-danger" role="button">
+                            <span class="fa fa-trash-o"></span> {{ label_borrar|capfirst }}
+                        </a>
+                    </div>
+                    {% endif %}
+
+                </div>
+            </div>
+
+        </fieldset>
+
+    </div> <!-- DIV   class="col-md-8 col-md-offset-2 well" -->
+</div> <!-- DIV   class="row" -->
+{% endblock %}
