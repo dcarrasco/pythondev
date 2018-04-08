@@ -1,14 +1,8 @@
-from django import forms
+from ..base.forms import OrmForm
 from .models import (
     Auditor, Familia, Catalogo, Tipo_inventario, Inventario, Tipo_ubicacion,
     Centro, Almacen, Unidad_medida
 )
-
-
-class OrmForm(forms.ModelForm):
-    def set_bootstrap_classes(self, fields):
-        for field in fields:
-            self.fields[field].widget.attrs = {'class': 'form-control'}
 
 
 class AuditorForm(OrmForm):

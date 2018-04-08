@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     path('inventario/', include('pythondev.inventario.urls')),
+    path('acl/', include('pythondev.acl.urls')),
     path('admin/', admin.site.urls),
 ]

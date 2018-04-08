@@ -1,10 +1,4 @@
-from django.views.generic import ListView, UpdateView, CreateView, DeleteView
-from django.template.loader import get_template
-from django.urls import reverse
-import importlib
-
-from ..base.models import AppRender, OrmList
-from ..acl.models import AppHelper
+from ..base.views import OrmListView, OrmCreateView, OrmUpdateView, OrmDeleteView
 from .models import (
     Auditor, Familia, Catalogo, Tipo_inventario, Inventario,
     Tipo_ubicacion, Centro, Almacen, Unidad_medida
@@ -13,53 +7,6 @@ from .forms import (
     AuditorForm, FamiliaForm, CatalogoForm, TipoInventarioForm, InventarioForm,
     TipoUbicacionForm, CentroForm, AlmacenForm, UnidadMedidaForm
 )
-
-
-class OrmListView(ListView):
-    paginate_by = 10
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return {**context, **app_context(self.model)}
-
-
-class OrmUpdateView(UpdateView):
-    template_name = 'generic_form.html'
-
-    def get_success_url(self):
-        return reverse(self.model.__name__.lower() + '_list')
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return {**context, **update_create_context(self.model), **{
-            'label_accion': 'modificar',
-        }}
-
-
-class OrmCreateView(CreateView):
-    template_name = 'generic_form.html'
-
-    def get_success_url(self):
-        return reverse(self.model.__name__.lower() + '_list')
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return {**context, **update_create_context(self.model), **{
-            'label_accion': 'crear',
-        }}
-
-
-class OrmDeleteView(DeleteView):
-    template_name = 'generic_detail.html'
-
-    def get_success_url(self):
-        return reverse(self.model.__name__.lower() + '_list')
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return {**context, **update_create_context(self.model), **{
-            'label_accion': 'borrar',
-        }}
 
 
 class AuditorList(OrmListView):
@@ -231,46 +178,5 @@ class UnidadMedidaCreate(OrmCreateView):
 class UnidadMedidaDelete(OrmDeleteView):
     model = Unidad_medida
     form_class = UnidadMedidaForm
-
-
-def update_create_context(model):
-    return {**app_context(model), **{
-        'label_cancelar': 'cancelar',
-        'label_borrar': 'eliminar',
-        'url_cancelar': reverse(model.__name__.lower()+'_list'),
-        'url_borrar': model.__name__.lower() + '_delete',
-        'model_name': model._meta.verbose_name
-    }}
-
-
-def app_context(model):
-    return {
-        'menu_modulo': get_menu_config(model),
-        'app_menu': AppHelper.app_menu(),
-        'model_name': model._meta.verbose_name,
-        'url_create': reverse(model.__name__.lower() + '_create'),
-    }
-
-
-def get_menu_config(model):
-    menu = [
-        {'model': 'Auditor', 'icon': 'user'},
-        {'model': 'Familia', 'icon': 'th'},
-        {'model': 'Catalogo', 'icon': 'barcode'},
-        {'model': 'Tipo_inventario', 'icon': 'th'},
-        {'model': 'Inventario', 'icon': 'list'},
-        {'model': 'Tipo_ubicacion', 'icon': 'th'},
-        {'model': 'Centro', 'icon': 'th'},
-        {'model': 'Almacen', 'icon': 'home'},
-        {'model': 'Unidad_medida', 'icon': 'balance-scale'},
-    ]
-
-    for menu_item in menu:
-        class_ = getattr(importlib.import_module('pythondev.inventario.models'), menu_item['model'])
-        menu_item['activo'] = 'active' if model.__name__==menu_item['model'] else ''
-        menu_item['url'] = reverse(menu_item['model'].lower()+'_list')
-        menu_item['nombre'] = class_()._meta.verbose_name.capitalize()
-
-    return menu
 
 

@@ -1,0 +1,34 @@
+{% extends "orm_list.html" %}
+
+{% block orm_list %}
+    <thead>
+        <tr>
+            <th>App</th>
+            <th>Modulo</th>
+            <th>Descripcion</th>
+            <th>Llave Modulo</th>
+            <th>Icono</th>
+            <th>URL</th>
+            <th>Orden</th>
+            <th class="text-center"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for modulo in modulo_list %}
+        <tr>
+            <td>{{ modulo.app }}</td>
+            <td>{{ modulo.modulo }}</td>
+            <td>{{ modulo.descripcion }}</td>
+            <td>{{ modulo.llave_modulo }}</td>
+            <td>{{ modulo.icono }}</td>
+            <td>{{ modulo.url }}</td>
+            <td>{{ modulo.orden }}</td>
+            <td class="text-center">
+                <a href="{% url 'modulo_update' modulo.id %}" class="">
+                    editar
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+{% endblock %}

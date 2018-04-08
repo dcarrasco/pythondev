@@ -1,0 +1,28 @@
+{% extends "orm_list.html" %}
+
+{% block orm_list %}
+    <thead>
+        <tr>
+            <th>App</th>
+            <th>Rol</th>
+            <th>Descripcion</th>
+            <th>Modulos</th>
+            <th class="text-center"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for rol in rol_list %}
+        <tr>
+            <td>{{ rol.app }}</td>
+            <td>{{ rol.rol }}</td>
+            <td>{{ rol.descripcion }}</td>
+            <td>{{ rol.modulos }}</td>
+            <td class="text-center">
+                <a href="{% url 'rol_update' rol.id %}" class="">
+                    editar
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+{% endblock %}
