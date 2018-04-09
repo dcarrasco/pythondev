@@ -2,6 +2,7 @@ from django.views.generic import ListView, UpdateView, CreateView, DeleteView
 from django.shortcuts import render
 from django.urls import reverse
 from django.contrib import messages
+from django.db.models import Q
 
 from importlib import import_module
 
@@ -15,11 +16,32 @@ class OrmListView(ListView):
     def get_queryset(self):
         modulo = self.kwargs.get('modulo').capitalize()
         self.model = get_class_instance(self.path_app+'.models', modulo)
-        return super().get_queryset()
+        queryset = super().get_queryset()
+
+        filtro = self.request.GET.get('q')
+        q_objects = Q()
+        if filtro:
+            for field in self.model._meta.get_fields():
+                if field.__class__.__name__ == 'CharField':
+                    kwargs = {'{0}__{1}'.format(str(field).split('.')[2], 'icontains'): filtro}
+                    print(kwargs)
+                    q_objects |= Q(**kwargs)
+
+        queryset = queryset.filter(q_objects)
+
+        return queryset
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        return {**context, **app_context(self.model)}
+        querystring = ''
+        for field in self.request.GET:
+            if field != 'page':
+                querystring = querystring + '&' + field + '=' + self.request.GET[field]
+
+        return {**context, **app_context(self.model), **{
+            'q_filtro': self.request.GET.get('q', ''),
+            'querystring': querystring,
+        }}
 
 
 class OrmUpdateView(UpdateView):
@@ -119,7 +141,6 @@ def get_orm_url(model, tipo):
 def get_model_url_name(model):
     modulo = model.__module__.split('.')[1]
     return modulo + ':' + modulo
-    # return model.__module__.split('.')[1] + ':' + model.__name__.lower()
 
 
 def get_class_instance(modulo, class_name):
@@ -132,9 +153,10 @@ def get_menu_config(model):
 
     if module_name == 'acl':
         menu = [
-            {'model': 'App', 'icon': 'user'},
-            {'model': 'Rol', 'icon': 'th'},
-            {'model': 'Modulo', 'icon': 'barcode'},
+            {'model': 'Usuario', 'icon': 'user'},
+            {'model': 'App', 'icon': 'folder-o'},
+            {'model': 'Rol', 'icon': 'server'},
+            {'model': 'Modulo', 'icon': 'list-alt'},
         ]
 
     if module_name == 'inventario':

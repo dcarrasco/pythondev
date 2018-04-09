@@ -3,7 +3,7 @@
 <div class="text-center">
     <ul class="pagination">
         {% if page_obj.has_previous %}
-        <li><a href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+        <li><a href="?page={{ page_obj.previous_page_number }}{{ querystring|safe }}">&laquo;</a></li>
         {% endif %}
 
         {% if page_obj.number > 6 %}
@@ -14,18 +14,18 @@
         {% for page in page_obj.paginator.page_range %}
             {% if page > page_obj.number|add:-5 and page < page_obj.number|add:5 %}
                 <li class="{% if page_obj.number == page  %}active{% endif %}">
-                    <a href="?page={{ page }}">{{ page }}</a>
+                    <a href="?page={{ page }}{{ querystring|safe }}">{{ page }}</a>
                 </li>
             {% endif %}
         {% endfor %}
 
         {% if page_obj.number < page_obj.paginator.num_pages|add:-5 %}
         <li class="disabled"><a href="#">...</a></li>
-        <li><a href="?page={{ page_obj.paginator.num_pages }}">{{ page_obj.paginator.num_pages }}</a></li>
+        <li><a href="?page={{ page_obj.paginator.num_pages }}{{ querystring|safe }}">{{ page_obj.paginator.num_pages }}</a></li>
         {% endif %}
 
         {% if page_obj.has_next %}
-        <li> <a href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+        <li> <a href="?page={{ page_obj.next_page_number }}{{ querystring|safe }}">&raquo;</a></li>
         {% endif %}
         </ul>
 </div>
