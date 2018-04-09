@@ -18,7 +18,7 @@
             <td>{{ rol.descripcion }}</td>
             <td>{{ rol.modulos }}</td>
             <td class="text-center">
-                <a href="{% url 'rol_update' rol.id %}" class="">
+                <a href="{% url 'acl:acl_update' 'rol' rol.id %}" class="">
                     editar
                 </a>
             </td>

@@ -29,7 +29,7 @@
 
                     {% if label_accion == 'modificar' %}
                     <div class="pull-left">
-                        <a href="{% url url_borrar object.pk %}" class="btn btn-danger" role="button">
+                        <a href="{% url url_borrar object_name object.pk %}" class="btn btn-danger" role="button">
                             <span class="fa fa-trash-o"></span> {{ label_borrar|capfirst }}
                         </a>
                     </div>

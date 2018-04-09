@@ -2,8 +2,10 @@ from django.urls import path
 
 from .views import *
 
+app_name = 'inventario'
+
 urlpatterns = [
-    # path('config/<model_name>', OrmList.as_view(), name='orm_list'),
+    path('config', AuditorList.as_view(), name='config'),
 
     path('config/auditor', AuditorList.as_view(), name='auditor_list'),
     path('config/auditor/create', AuditorCreate.as_view(), name='auditor_create'),

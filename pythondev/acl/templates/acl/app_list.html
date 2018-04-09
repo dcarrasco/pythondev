@@ -20,7 +20,7 @@
             <td>{{ app.icono }}</td>
             <td>{{ app.orden }}</td>
             <td class="text-center">
-                <a href="{% url 'app_update' app.id %}" class="">
+                <a href="{% url 'acl:acl_update' 'app' app.id %}" class="">
                     editar
                 </a>
             </td>

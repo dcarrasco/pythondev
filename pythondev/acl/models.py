@@ -1,4 +1,6 @@
 from django.db import models
+from django.urls import reverse
+
 from pythondev.helpers import Collection
 # Create your models here.
 
@@ -43,8 +45,8 @@ class Modulo(models.Model):
     modulo = models.CharField(max_length=50)
     descripcion = models.CharField(max_length=100)
     llave_modulo = models.CharField(max_length=100)
-    icono = models.CharField(max_length=50)
-    url = models.CharField(max_length=100)
+    icono = models.CharField(max_length=50, blank=True)
+    url = models.CharField(max_length=100, blank=True)
     orden = models.IntegerField()
 
     def __str__(self):
@@ -82,20 +84,23 @@ class AppHelper:
 
         menu = dict()
         for modulo in modulos:
+            modulo_list = {
+                'modulo': modulo['mod_modulo'],
+                'llave_modulo': modulo['mod_llave_modulo'],
+                'icono': modulo['mod_icono'],
+                # 'url': reverse(modulo['mod_url']) if modulo['mod_url'] != '' else '',
+                'url': '',
+                'selected': modulo['mod_selected'],
+            }
+
             if modulo['app_app'] in menu:
-                menu[modulo['app_app']]['modulos'].append({
-                    'modulo': modulo['mod_modulo'],
-                    'llave_modulo': modulo['mod_llave_modulo'],
-                    'icono': modulo['mod_icono'],
-                    'url': modulo['mod_url'],
-                    'selected': modulo['mod_selected'],
-                })
+                menu[modulo['app_app']]['modulos'].append(modulo_list)
             else:
                 menu[modulo['app_app']] = {
                     'app': modulo['app_app'],
                     'icono': modulo['app_icono'],
                     'selected': modulo['app_selected'],
-                    'modulos': list(),
+                    'modulos': [modulo_list],
                 }
 
         return menu

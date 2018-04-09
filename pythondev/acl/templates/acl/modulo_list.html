@@ -24,7 +24,7 @@
             <td>{{ modulo.url }}</td>
             <td>{{ modulo.orden }}</td>
             <td class="text-center">
-                <a href="{% url 'modulo_update' modulo.id %}" class="">
+                <a href="{% url 'acl:acl_update' 'modulo' modulo.id %}" class="">
                     editar
                 </a>
             </td>

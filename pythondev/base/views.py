@@ -10,6 +10,12 @@ from ..acl.models import AppHelper
 
 class OrmListView(ListView):
     paginate_by = 10
+    model = None
+
+    def get_queryset(self):
+        modulo = self.kwargs.get('modulo').capitalize()
+        self.model = get_class_instance(self.path_app+'.models', modulo)
+        return super().get_queryset()
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -19,9 +25,19 @@ class OrmListView(ListView):
 class OrmUpdateView(UpdateView):
     template_name = 'generic_form.html'
 
+    def get_queryset(self):
+        modulo = self.kwargs.get('modulo', '').capitalize()
+        self.model = get_class_instance(self.path_app+'.models', modulo)
+        return super().get_queryset()
+
+    def get_form_class(self):
+        modulo = self.kwargs.get('modulo', '').capitalize()
+        self.form_class = get_class_instance(self.path_app+'.forms', modulo+'Form')
+        return super().get_form_class()
+
     def get_success_url(self):
         messages.info(self.request, self.model.__name__+' ('+str(self.model)+') actualizado')
-        return reverse(self.model.__name__.lower() + '_list')
+        return reverse(get_model_url_name(self.model) + '_list')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -33,9 +49,15 @@ class OrmUpdateView(UpdateView):
 class OrmCreateView(CreateView):
     template_name = 'generic_form.html'
 
+    def get_form_class(self):
+        modulo = self.kwargs.get('modulo', '').capitalize()
+        self.model = get_class_instance(self.path_app+'.models', modulo)
+        self.form_class = get_class_instance(self.path_app+'.forms', modulo+'Form')
+        return super().get_form_class()
+
     def get_success_url(self):
         messages.info(self.request, self.model.__name__+' ('+str(self.model)+') creado')
-        return reverse(self.model.__name__.lower() + '_list')
+        return reverse(get_model_url_name(self.model) + '_list')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -47,9 +69,14 @@ class OrmCreateView(CreateView):
 class OrmDeleteView(DeleteView):
     template_name = 'generic_detail.html'
 
+    def get_queryset(self):
+        modulo = self.kwargs.get('modulo', '').capitalize()
+        self.model = get_class_instance(self.path_app+'.models', modulo)
+        return super().get_queryset()
+
     def get_success_url(self):
         messages.info(self.request, self.model.__name__+' ('+str(self.model)+') borrado')
-        return reverse(self.model.__name__.lower() + '_list')
+        return reverse(get_model_url_name(self.model) + '_list')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -62,8 +89,9 @@ def update_create_context(model):
     return {**app_context(model), **{
         'label_cancelar': 'cancelar',
         'label_borrar': 'eliminar',
-        'url_cancelar': reverse(model.__name__.lower()+'_list'),
-        'url_borrar': model.__name__.lower() + '_delete',
+        'url_cancelar': reverse(get_model_url_name(model) + '_list', kwargs={'modulo':model.__name__.lower()}),
+        'url_borrar': get_model_url_name(model) + '_delete',
+        'object_name': model.__name__.lower(),
         'model_name': model._meta.verbose_name
     }}
 
@@ -73,21 +101,32 @@ def app_context(model):
         'menu_modulo': get_menu_config(model),
         'app_menu': AppHelper.app_menu(),
         'model_name': model._meta.verbose_name,
-        'url_create': reverse(model.__name__.lower() + '_create'),
+        'url_create': reverse(get_model_url_name(model) + '_create', kwargs={'modulo':model.__name__.lower()}),
     }
+
+
+def get_model_url_name(model):
+    modulo = model.__module__.split('.')[1]
+    return modulo + ':' + modulo
+    # return model.__module__.split('.')[1] + ':' + model.__name__.lower()
+
+
+def get_class_instance(modulo, class_name):
+    return getattr(import_module(modulo), class_name)
 
 
 def get_menu_config(model):
     menu = []
+    module_name = model.__module__.split('.')[1]
 
-    if model.__module__ == 'pythondev.acl.models':
+    if module_name == 'acl':
         menu = [
             {'model': 'App', 'icon': 'user'},
             {'model': 'Rol', 'icon': 'th'},
             {'model': 'Modulo', 'icon': 'barcode'},
         ]
 
-    if model.__module__ == 'pythondev.inventario.models':
+    if module_name == 'inventario':
         menu = [
             {'model': 'Auditor', 'icon': 'user'},
             {'model': 'Familia', 'icon': 'th'},
@@ -99,12 +138,11 @@ def get_menu_config(model):
             {'model': 'Almacen', 'icon': 'home'},
             {'model': 'Unidad_medida', 'icon': 'balance-scale'},
         ]
-
     for menu_item in menu:
-        class_ = getattr(import_module(model.__module__), menu_item['model'])
+        class_ = get_class_instance(model.__module__, menu_item['model'])
         menu_item['activo'] = 'active' if model.__name__==menu_item['model'] else ''
-        menu_item['url'] = reverse(menu_item['model'].lower()+'_list')
-        menu_item['nombre'] = class_()._meta.verbose_name.capitalize()
+        menu_item['url'] = reverse(module_name+':acl_list', kwargs={'modulo': menu_item['model'].lower()})
+        menu_item['nombre'] = class_._meta.verbose_name.capitalize()
 
     return menu
 

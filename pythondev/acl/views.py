@@ -1,60 +1,19 @@
-from ..base.views import OrmListView, OrmCreateView, OrmUpdateView, OrmDeleteView
+from ..base.views import OrmListView, OrmCreateView, OrmUpdateView, OrmDeleteView, get_class_instance
 from .models import App, Rol, Modulo
 from .forms import AppForm, RolForm, ModuloForm
 
 
-class AppList(OrmListView):
-    model = App
+class AclList(OrmListView):
+    path_app = 'pythondev.acl'
 
 
-class AppUpdate(OrmUpdateView):
-    model = App
-    form_class = AppForm
+class AclCreate(OrmCreateView):
+    path_app = 'pythondev.acl'
 
 
-class AppCreate(OrmCreateView):
-    model = App
-    form_class = AppForm
+class AclUpdate(OrmUpdateView):
+    path_app = 'pythondev.acl'
 
 
-class AppDelete(OrmDeleteView):
-    model = App
-    form_class = AppForm
-
-
-class RolList(OrmListView):
-    model = Rol
-
-
-class RolUpdate(OrmUpdateView):
-    model = Rol
-    form_class = RolForm
-
-
-class RolCreate(OrmCreateView):
-    model = Rol
-    form_class = RolForm
-
-
-class RolDelete(OrmDeleteView):
-    model = Rol
-    form_class = RolForm
-
-
-class ModuloList(OrmListView):
-    model = Modulo
-
-
-class ModuloUpdate(OrmUpdateView):
-    model = Modulo
-    form_class = ModuloForm
-
-
-class ModuloCreate(OrmCreateView):
-    model = Modulo
-    form_class = ModuloForm
-
-
-class ModuloDelete(OrmDeleteView):
-    model = Modulo
-    form_class = ModuloForm
+class AclDelete(OrmDeleteView):
+    path_app = 'pythondev.acl'
