@@ -1,6 +1,6 @@
 from ..base.views import OrmListView, OrmCreateView, OrmUpdateView, OrmDeleteView
-from .models import App, Rol, Modulo
-from .forms import AppForm, RolForm, ModuloForm
+from .models import Usuario, App, Rol, Modulo
+from .forms import UsuarioForm, AppForm, RolForm, ModuloForm
 
 
 class AclList(OrmListView):

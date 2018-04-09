@@ -2,7 +2,27 @@ from django.db import models
 from django.urls import reverse
 
 from pythondev.helpers import Collection
-# Create your models here.
+
+
+class Usuario(models.Model):
+    nombre = models.CharField('nombre del usuario', max_length=45)
+    activo = models.BooleanField()
+    username = models.CharField(max_length=30)
+    password = models.CharField(max_length=255)
+    email = models.CharField(max_length=40)
+    fecha_login = models.DateTimeField()
+    ip_login = models.CharField(max_length=30)
+    agente_login = models.CharField(max_length=50)
+    login_errors = models.IntegerField(max_length=50)
+    remember_token = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.nombre
+
+    class Meta:
+        db_table = "fija_usuarios"
+        ordering = ["nombre"]
+
 
 class App(models.Model):
     app = models.CharField('nombre de la aplicacion', max_length=50)
@@ -32,7 +52,7 @@ class Rol(models.Model):
         return self.rol
 
     def get_modulos(self):
-        return ", ".join([m.modulo for m in self.modulos.all()])
+        return "<ul><li>"+"</li><li>".join([m.modulo for m in self.modulos.all()])+"</li></ul>"
 
     class Meta:
         db_table = "acl_rol"

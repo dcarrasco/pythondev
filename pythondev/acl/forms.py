@@ -1,5 +1,15 @@
 from ..base.forms import OrmForm
-from .models import App, Rol, Modulo
+from .models import Usuario, App, Rol, Modulo
+
+
+class UsuarioForm(OrmForm):
+    def __init__(self, *args, **kwargs):
+        super(UsuarioForm, self).__init__(*args, **kwargs)
+        self.set_bootstrap_classes(['nombre', 'username', 'password', 'email', 'fecha_login', 'ip_login', 'agente_login', 'login_errors', 'remember_token'])
+
+    class Meta:
+        model = Usuario
+        fields = ['nombre', 'activo', 'username', 'password', 'email', 'fecha_login', 'ip_login', 'agente_login', 'login_errors', 'remember_token']
 
 
 class AppForm(OrmForm):

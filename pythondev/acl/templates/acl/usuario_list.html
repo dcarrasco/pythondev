@@ -3,22 +3,22 @@
 {% block orm_list %}
     <thead>
         <tr>
-            <th>App</th>
-            <th>Rol</th>
-            <th>Descripcion</th>
-            <th>Modulos</th>
+            <th>Nombre</th>
+            <th>Activo</th>
+            <th>Username</th>
+            <th>email</th>
             <th class="text-center"></th>
         </tr>
     </thead>
     <tbody>
         {% for rol in rol_list %}
         <tr>
-            <td>{{ rol.app }}</td>
-            <td>{{ rol.rol }}</td>
-            <td>{{ rol.descripcion }}</td>
-            <td>{{ rol.get_modulos|safe }}</td>
+            <td>{{ rol.nombre }}</td>
+            <td>{{ rol.activo }}</td>
+            <td>{{ rol.username }}</td>
+            <td>{{ rol.email }}</td>
             <td class="text-center">
-                <a href="{% url 'acl:acl_update' 'rol' rol.id %}" class="">
+                <a href="{% url 'acl:acl_update' 'usuario' usuario.id %}" class="">
                     editar
                 </a>
             </td>
