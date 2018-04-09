@@ -14,7 +14,7 @@
             <td>{{ tipo_ubicacion.tipo_inventario }}</td>
             <td>{{ tipo_ubicacion.tipo_ubicacion }}</td>
             <td class="text-center">
-                <a href="{% url 'inventario:tipo_ubicacion_update' tipo_ubicacion.id %}" class="">
+                <a href="{% url 'inventario:inventario_update' 'tipo_ubicacion' tipo_ubicacion.id %}" class="">
                     editar
                 </a>
             </td>

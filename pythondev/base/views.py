@@ -37,7 +37,7 @@ class OrmUpdateView(UpdateView):
 
     def get_success_url(self):
         messages.info(self.request, self.model.__name__+' ('+str(self.model)+') actualizado')
-        return reverse(get_model_url_name(self.model) + '_list')
+        return get_orm_url(self.model, 'list')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -57,7 +57,7 @@ class OrmCreateView(CreateView):
 
     def get_success_url(self):
         messages.info(self.request, self.model.__name__+' ('+str(self.model)+') creado')
-        return reverse(get_model_url_name(self.model) + '_list')
+        return get_orm_url(self.model, 'list')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -76,7 +76,7 @@ class OrmDeleteView(DeleteView):
 
     def get_success_url(self):
         messages.info(self.request, self.model.__name__+' ('+str(self.model)+') borrado')
-        return reverse(get_model_url_name(self.model) + '_list')
+        return get_orm_url(self.model, 'list')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -89,8 +89,8 @@ def update_create_context(model):
     return {**app_context(model), **{
         'label_cancelar': 'cancelar',
         'label_borrar': 'eliminar',
-        'url_cancelar': reverse(get_model_url_name(model) + '_list', kwargs={'modulo':model.__name__.lower()}),
-        'url_borrar': get_model_url_name(model) + '_delete',
+        'url_cancelar': get_orm_url(model, 'list'),
+        'url_borrar': get_orm_url(model, 'delete'),
         'object_name': model.__name__.lower(),
         'model_name': model._meta.verbose_name
     }}
@@ -103,6 +103,17 @@ def app_context(model):
         'model_name': model._meta.verbose_name,
         'url_create': reverse(get_model_url_name(model) + '_create', kwargs={'modulo':model.__name__.lower()}),
     }
+
+
+def get_orm_url(model, tipo):
+    modulo = model.__module__.split('.')[1].lower()
+    modelo = model.__name__.lower()
+    url = modulo + ':' + modulo + '_' + tipo
+
+    if tipo == 'delete':
+        return url
+
+    return reverse(url, kwargs={'modulo':modelo})
 
 
 def get_model_url_name(model):
@@ -141,10 +152,7 @@ def get_menu_config(model):
     for menu_item in menu:
         class_ = get_class_instance(model.__module__, menu_item['model'])
         menu_item['activo'] = 'active' if model.__name__==menu_item['model'] else ''
-        menu_item['url'] = reverse(module_name+':acl_list', kwargs={'modulo': menu_item['model'].lower()})
+        menu_item['url'] = get_orm_url(class_, 'list')
         menu_item['nombre'] = class_._meta.verbose_name.capitalize()
 
     return menu
-
-
-

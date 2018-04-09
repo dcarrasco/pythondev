@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"__",
+				"__name__"
+			],
+			[
+				"get_m",
+				"get_model_url_name"
+			],
+			[
+				"mod",
+				"module_name"
+			],
+			[
+				"mo",
+				"module_name"
+			],
+			[
+				"modu",
+				"modulo_list"
+			],
+			[
 				"OrmL",
 				"OrmListView"
 			],
@@ -156,82 +176,47 @@
 	"buffers":
 	[
 		{
-			"file": "pythondev/inventario/urls.py",
-			"settings":
-			{
-				"buffer_size": 3366,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pythondev/inventario/views.py",
-			"settings":
-			{
-				"buffer_size": 3466,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "pythondev/base/views.py",
 			"settings":
 			{
-				"buffer_size": 3002,
+				"buffer_size": 5222,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "pythondev/inventario/forms.py",
+			"file": "pythondev/acl/views.py",
 			"settings":
 			{
-				"buffer_size": 2936,
+				"buffer_size": 443,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "pythondev/templates/orm_form.html",
 			"settings":
 			{
-				"buffer_size": 1589,
+				"buffer_size": 1601,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "pythondev/templates/generic_form.html",
+			"file": "pythondev/acl/models.py",
 			"settings":
 			{
-				"buffer_size": 338,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "pythondev/templates/generic_detail.html",
-			"settings":
-			{
-				"buffer_size": 277,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "pythondev/templates/orm_list.html",
-			"settings":
-			{
-				"buffer_size": 1329,
+				"buffer_size": 3510,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "pythondev/inventario/models.py",
+			"file": "pythondev/acl/urls.py",
 			"settings":
 			{
-				"buffer_size": 5103,
+				"buffer_size": 384,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -243,10 +228,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 530.0,
-		"last_filter": "gstat",
+		"height": 275.0,
+		"last_filter": "filerena",
 		"selected_items":
 		[
+			[
+				"filerena",
+				"File: Rename"
+			],
 			[
 				"gstat",
 				"Git: Status"
@@ -266,10 +255,6 @@
 			[
 				"git com",
 				"Git: Commit"
-			],
-			[
-				"filerena",
-				"File: Rename"
 			],
 			[
 				"theme",
@@ -608,7 +593,7 @@
 				"UI: Select Theme"
 			]
 		],
-		"width": 708.0
+		"width": 696.0
 	},
 	"console":
 	{
@@ -635,42 +620,49 @@
 	[
 		"/C/Users/Daniel/Code/pythondev",
 		"/C/Users/Daniel/Code/pythondev/pythondev",
-		"/C/Users/Daniel/Code/pythondev/pythondev/__pycache__",
-		"/C/Users/Daniel/Code/pythondev/pythondev/base",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario",
-		"/C/Users/Daniel/Code/pythondev/pythondev/templates"
+		"/C/Users/Daniel/Code/pythondev/pythondev/__pycache__"
 	],
 	"file_history":
 	[
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/unidad_medida_list.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/tipo_ubicacion_list.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/inventario_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/templates/acl/app_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/templates/acl/rol_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/templates/acl/modulo_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/urls.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/models.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/templates/app_navbar.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/urls.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/almacen_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/auditor_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/catalogo_list.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/centro_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/familia_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/inventario_list.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/tipo_inventario_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/tipo_ubicacion_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/unidad_medida_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/templates/orm_list.html",
+		"/C/Users/Daniel/Code/pythondev/config/urls.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/forms.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/views.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/models.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/templates/generic_detail.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/generic_form.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/orm_form.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/catalogo_list.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/familia_list.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/auditor_list.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/models.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/base/forms.py",
+		"/C/Users/Daniel/Code/pythondev/.gitignore",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/forms.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/base/views.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/templates/app_alert.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/views.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/templates/base_index.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/admin.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/app_menu_modulo.html",
-		"/C/Users/Daniel/Code/pythondev/.gitignore",
 		"/C/Users/Daniel/Code/pythondev/pythondev/base/models.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/orm_detail.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/views.py",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/urls.py",
 		"/C/Users/Daniel/Code/pythondev/config/settings.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/auditor_form.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/templates/orm_list.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/templates/base_index.html",
 		"/C/Users/Daniel/Code/pythondev/manage.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/app_paginated.html",
-		"/C/Users/Daniel/Code/pythondev/config/urls.py",
 		"/C/Users/Daniel/Code/pythondev/inventario/models.py",
 		"/C/Users/Daniel/Code/pythondev/inventario/views.py",
 		"/C/Users/Daniel/Code/pythondev/base/templates/app_paginated.html",
@@ -759,19 +751,7 @@
 		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/composer/autoload_classmap.php",
 		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/composer/autoload_static.php",
 		"/C/Users/Daniel/Code/lara-dev/www/lara/composer.json",
-		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Usuario.php",
-		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php",
-		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/doctrine/dbal/lib/Doctrine/DBAL/Schema/Column.php",
-		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php",
-		"/C/util/php7/php.ini",
-		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/laravel/framework/src/Illuminate/Support/Facades/Schema.php",
-		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Repositories/OrmRepositoryInterface.php",
-		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Repositories/EloquentOrmRepository.php",
-		"/C/util/bin/clink/config/prompt.lua",
-		"/C/util/bin/gitprompt.bat",
-		"/C/Users/Daniel/Code/lara-dev/www/lara/bootstrap/app.php",
-		"/C/Users/Daniel/Desktop/from_cmd.txt",
-		"/C/Users/Daniel/Code/dotfiles/bash_prompt"
+		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Usuario.php"
 	],
 	"find":
 	{
@@ -790,6 +770,45 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"modulo",
+			"Modulo",
+			"modulo",
+			"Update",
+			"Create",
+			"get_object",
+			"get_menu_config",
+			"instance_class",
+			"('*************************************')",
+			"_u",
+			"Update",
+			"update",
+			"Update",
+			"update",
+			"Update",
+			"models",
+			"pythondev.",
+			"model.__module__",
+			"modulo",
+			"app_context",
+			"rol",
+			"app",
+			"auditor",
+			"catalogo",
+			"Catalogo",
+			"Familia",
+			"Auditor",
+			"catalogo_",
+			" Catalogo",
+			"/catalogo",
+			"familia_",
+			" Familia",
+			"/familia",
+			"auditor_",
+			" Auditor",
+			"auditor",
+			"Catalogo",
+			"Familia",
+			"Auditor",
 			"AppRender",
 			"OrmList",
 			"AppRender",
@@ -878,21 +897,7 @@
 			"llave_modulo",
 			"Rol",
 			"App",
-			"}}",
-			"')",
-			"}}",
-			"{{ asset('",
-			"Tipo_ubicacion",
-			"Tipo_inventario",
-			"pmp",
-			"almacen",
-			"python",
-			"Poll",
-			"poll",
-			"Almacen",
-			"question_id",
-			" '",
-			"PASSWORD"
+			"}}"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -910,30 +915,63 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "pythondev/inventario/urls.py",
+					"file": "pythondev/base/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3366,
+						"buffer_size": 5222,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3358,
-								3358
+								4007,
+								4007
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Python/Python.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 459.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "pythondev/acl/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								443,
+								443
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -943,109 +981,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "pythondev/inventario/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3466,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								441,
-								441
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 6121.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
 					"buffer": 2,
-					"file": "pythondev/base/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3002,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2689,
-								2689
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1206.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "pythondev/inventario/forms.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2936,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2841,
-								2841
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 684.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "pythondev/templates/orm_form.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1589,
+						"buffer_size": 1601,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1178,
-								1178
+								731,
+								759
 							]
 						],
 						"settings":
@@ -1054,35 +1003,6 @@
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 790.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "pythondev/templates/generic_form.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 338,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1092,81 +1012,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "pythondev/templates/generic_detail.html",
+					"buffer": 3,
+					"file": "pythondev/acl/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 277,
+						"buffer_size": 3510,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								239,
-								239
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "pythondev/templates/orm_list.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1329,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								669,
-								669
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 114.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "pythondev/inventario/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5103,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								3027,
+								3027
 							]
 						],
 						"settings":
@@ -1177,10 +1036,41 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2622.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pythondev/acl/urls.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								382,
+								382
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1188,11 +1078,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 45.0
+		"height": 49.0
 	},
 	"input":
 	{
-		"height": 102.0
+		"height": 106.0
 	},
 	"layout":
 	{
@@ -1233,7 +1123,7 @@
 	"project": "pythondev.sublime-project",
 	"replace":
 	{
-		"height": 84.0
+		"height": 92.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1242,6 +1132,30 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"mode",
+				"pythondev\\acl\\models.py"
+			],
+			[
+				"aclur",
+				"pythondev\\acl\\urls.py"
+			],
+			[
+				"aclvie",
+				"pythondev\\acl\\views.py"
+			],
+			[
+				"invenurls",
+				"pythondev\\inventario\\urls.py"
+			],
+			[
+				"aclurls",
+				"pythondev\\acl\\urls.py"
+			],
+			[
+				"invenurl",
+				"pythondev\\inventario\\urls.py"
+			],
 			[
 				"invenmodels",
 				"pythondev\\inventario\\models.py"
@@ -1729,30 +1643,6 @@
 			[
 				"modelfa",
 				"Laravel\\database\\factories\\ModelFactory.php"
-			],
-			[
-				"tipoinven",
-				"App\\Inventario\\TipoInventario.php"
-			],
-			[
-				"fijaseed",
-				"Laravel\\database\\seeds\\TablaFijaFamiliasSeeder.php"
-			],
-			[
-				"fijatipos",
-				"Laravel\\database\\seeds\\TablaFijaTiposInventarioSeeder.php"
-			],
-			[
-				"databassee",
-				"Laravel\\database\\seeds\\DatabaseSeeder.php"
-			],
-			[
-				"toac",
-				"Laravel\\database\\seeds\\TablaToaCiudadesSeeder.php"
-			],
-			[
-				"tipostra",
-				"Laravel\\database\\seeds\\TablaToaTiposTrabajoSeeder.php"
 			]
 		],
 		"width": 0.0
