@@ -8,8 +8,7 @@ from .models import (
 class AuditorForm(OrmForm):
     def __init__(self, *args, **kwargs):
         super(AuditorForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['nombre'])
-
+        self.set_bootstrap_classes()
     class Meta:
         model = Auditor
         fields = ['nombre', 'activo']
@@ -18,7 +17,7 @@ class AuditorForm(OrmForm):
 class FamiliaForm(OrmForm):
     def __init__(self, *args, **kwargs):
         super(FamiliaForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['codigo', 'tipo', 'nombre'])
+        self.set_bootstrap_classes()
 
     class Meta:
         model = Familia
@@ -28,17 +27,17 @@ class FamiliaForm(OrmForm):
 class CatalogoForm(OrmForm):
     def __init__(self, *args, **kwargs):
         super(CatalogoForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['catalogo', 'descripcion', 'pmp'])
+        self.set_bootstrap_classes()
 
     class Meta:
         model = Catalogo
         fields = ['catalogo', 'descripcion', 'pmp', 'es_seriado']
 
 
-class TipoInventarioForm(OrmForm):
+class Tipo_inventarioForm(OrmForm):
     def __init__(self, *args, **kwargs):
-        super(TipoInventarioForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['id_tipo_inventario', 'desc_tipo_inventario'])
+        super(Tipo_inventarioForm, self).__init__(*args, **kwargs)
+        self.set_bootstrap_classes()
 
     class Meta:
         model = Tipo_inventario
@@ -48,17 +47,17 @@ class TipoInventarioForm(OrmForm):
 class InventarioForm(OrmForm):
     def __init__(self, *args, **kwargs):
         super(InventarioForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['nombre', 'tipo_inventario'])
+        self.set_bootstrap_classes()
 
     class Meta:
         model = Inventario
         fields = ['nombre', 'activo', 'tipo_inventario']
 
 
-class TipoUbicacionForm(OrmForm):
+class Tipo_ubicacionForm(OrmForm):
     def __init__(self, *args, **kwargs):
-        super(TipoUbicacionForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['tipo_inventario', 'tipo_ubicacion'])
+        super(Tipo_ubicacionForm, self).__init__(*args, **kwargs)
+        self.set_bootstrap_classes()
 
     class Meta:
         model = Tipo_ubicacion
@@ -68,8 +67,7 @@ class TipoUbicacionForm(OrmForm):
 class CentroForm(OrmForm):
     def __init__(self, *args, **kwargs):
         super(CentroForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['centro'])
-
+        self.set_bootstrap_classes()
     class Meta:
         model = Centro
         fields = ['centro']
@@ -78,17 +76,16 @@ class CentroForm(OrmForm):
 class AlmacenForm(OrmForm):
     def __init__(self, *args, **kwargs):
         super(AlmacenForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['almacen'])
-
+        self.set_bootstrap_classes()
     class Meta:
         model = Almacen
         fields = ['almacen']
 
 
-class UnidadMedidaForm(OrmForm):
+class Unidad_medidaForm(OrmForm):
     def __init__(self, *args, **kwargs):
-        super(UnidadMedidaForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['unidad', 'desc_unidad'])
+        super(Unidad_medidaForm, self).__init__(*args, **kwargs)
+        self.set_bootstrap_classes()
 
     class Meta:
         model = Unidad_medida

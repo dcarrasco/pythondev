@@ -5,7 +5,7 @@ from .models import Usuario, App, Rol, Modulo
 class UsuarioForm(OrmForm):
     def __init__(self, *args, **kwargs):
         super(UsuarioForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['nombre', 'username', 'password', 'email', 'fecha_login', 'ip_login', 'agente_login', 'login_errors', 'remember_token'])
+        self.set_bootstrap_classes()
 
     class Meta:
         model = Usuario
@@ -15,7 +15,7 @@ class UsuarioForm(OrmForm):
 class AppForm(OrmForm):
     def __init__(self, *args, **kwargs):
         super(AppForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['app', 'descripcion', 'url', 'icono', 'orden'])
+        self.set_bootstrap_classes()
 
     class Meta:
         model = App
@@ -25,7 +25,7 @@ class AppForm(OrmForm):
 class RolForm(OrmForm):
     def __init__(self, *args, **kwargs):
         super(RolForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['app', 'rol', 'descripcion', 'modulos'])
+        self.set_bootstrap_classes()
 
     class Meta:
         model = Rol
@@ -35,7 +35,7 @@ class RolForm(OrmForm):
 class ModuloForm(OrmForm):
     def __init__(self, *args, **kwargs):
         super(ModuloForm, self).__init__(*args, **kwargs)
-        self.set_bootstrap_classes(['app', 'modulo', 'descripcion', 'llave_modulo', 'icono', 'url', 'orden'])
+        self.set_bootstrap_classes()
 
     class Meta:
         model = Modulo

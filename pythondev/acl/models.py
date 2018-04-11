@@ -13,7 +13,7 @@ class Usuario(models.Model):
     fecha_login = models.DateTimeField()
     ip_login = models.CharField(max_length=30)
     agente_login = models.CharField(max_length=50)
-    login_errors = models.IntegerField(max_length=50)
+    login_errors = models.IntegerField()
     remember_token = models.CharField(max_length=100)
 
     def __str__(self):

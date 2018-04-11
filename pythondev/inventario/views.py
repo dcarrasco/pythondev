@@ -4,8 +4,8 @@ from .models import (
     Tipo_ubicacion, Centro, Almacen, Unidad_medida
 )
 from .forms import (
-    AuditorForm, FamiliaForm, CatalogoForm, TipoInventarioForm, InventarioForm,
-    TipoUbicacionForm, CentroForm, AlmacenForm, UnidadMedidaForm
+    AuditorForm, FamiliaForm, CatalogoForm, Tipo_inventarioForm, InventarioForm,
+    Tipo_ubicacionForm, CentroForm, AlmacenForm, Unidad_medidaForm
 )
 
 
