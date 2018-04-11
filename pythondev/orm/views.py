@@ -1,11 +1,9 @@
 from django.views.generic import ListView, UpdateView, CreateView, DeleteView
-from django.shortcuts import render
-from django.urls import reverse
-from django.contrib import messages
 from django.db.models import Q
+from django.contrib import messages
+from django.urls import reverse
 
-from importlib import import_module
-
+from ..base.helpers import get_class_instance
 from ..acl.models import AppHelper
 
 
@@ -24,7 +22,6 @@ class OrmListView(ListView):
             for field in self.model._meta.get_fields():
                 if field.__class__.__name__ == 'CharField':
                     kwargs = {'{0}__{1}'.format(str(field).split('.')[2], 'icontains'): filtro}
-                    print(kwargs)
                     q_objects |= Q(**kwargs)
 
         queryset = queryset.filter(q_objects)
@@ -45,7 +42,7 @@ class OrmListView(ListView):
 
 
 class OrmUpdateView(UpdateView):
-    template_name = 'generic_form.html'
+    template_name = 'orm/generic_form.html'
 
     def get_queryset(self):
         modulo = self.kwargs.get('modulo', '').capitalize()
@@ -58,7 +55,7 @@ class OrmUpdateView(UpdateView):
         return super().get_form_class()
 
     def get_success_url(self):
-        messages.info(self.request, self.model.__name__+' ('+str(self.model)+') actualizado')
+        messages.info(self.request, self.model.__name__+' ('+str(self.object)+') actualizado')
         return get_orm_url(self.model, 'list')
 
     def get_context_data(self, **kwargs):
@@ -69,7 +66,7 @@ class OrmUpdateView(UpdateView):
 
 
 class OrmCreateView(CreateView):
-    template_name = 'generic_form.html'
+    template_name = 'orm/generic_form.html'
 
     def get_form_class(self):
         modulo = self.kwargs.get('modulo', '').capitalize()
@@ -78,7 +75,7 @@ class OrmCreateView(CreateView):
         return super().get_form_class()
 
     def get_success_url(self):
-        messages.info(self.request, self.model.__name__+' ('+str(self.model)+') creado')
+        messages.info(self.request, self.model.__name__+' ('+str(self.object)+') creado')
         return get_orm_url(self.model, 'list')
 
     def get_context_data(self, **kwargs):
@@ -89,7 +86,7 @@ class OrmCreateView(CreateView):
 
 
 class OrmDeleteView(DeleteView):
-    template_name = 'generic_detail.html'
+    template_name = 'orm/generic_detail.html'
 
     def get_queryset(self):
         modulo = self.kwargs.get('modulo', '').capitalize()
@@ -97,7 +94,7 @@ class OrmDeleteView(DeleteView):
         return super().get_queryset()
 
     def get_success_url(self):
-        messages.info(self.request, self.model.__name__+' ('+str(self.model)+') borrado')
+        messages.info(self.request, self.model.__name__+' ('+str(self.object)+') borrado')
         return get_orm_url(self.model, 'list')
 
     def get_context_data(self, **kwargs):
@@ -105,6 +102,15 @@ class OrmDeleteView(DeleteView):
         return {**context, **update_create_context(self.model), **{
             'label_accion': 'borrar',
         }}
+
+
+def app_context(model):
+    return {
+        'menu_modulo': get_menu_config(model),
+        'app_menu': AppHelper.app_menu(),
+        'model_name': model._meta.verbose_name,
+        'url_create': reverse(get_model_url_name(model) + '_create', kwargs={'modulo':model.__name__.lower()}),
+    }
 
 
 def update_create_context(model):
@@ -117,14 +123,6 @@ def update_create_context(model):
         'model_name': model._meta.verbose_name
     }}
 
-
-def app_context(model):
-    return {
-        'menu_modulo': get_menu_config(model),
-        'app_menu': AppHelper.app_menu(),
-        'model_name': model._meta.verbose_name,
-        'url_create': reverse(get_model_url_name(model) + '_create', kwargs={'modulo':model.__name__.lower()}),
-    }
 
 
 def get_orm_url(model, tipo):
@@ -141,10 +139,6 @@ def get_orm_url(model, tipo):
 def get_model_url_name(model):
     modulo = model.__module__.split('.')[1]
     return modulo + ':' + modulo
-
-
-def get_class_instance(modulo, class_name):
-    return getattr(import_module(modulo), class_name)
 
 
 def get_menu_config(model):
@@ -178,3 +172,8 @@ def get_menu_config(model):
         menu_item['nombre'] = class_._meta.verbose_name.capitalize()
 
     return menu
+
+
+
+
+

@@ -1,9 +1,12 @@
 {
 	"folders":
 	[
+        {
+            "path": "."
+        },
 		{
-			"path": "."
-		}
+			"path": "c:/util/python/python36/lib/site-packages/django"
+		},
 	],
     "translate_tabs_to_spaces": true
 }

@@ -1,4 +1,4 @@
-from ..base.views import OrmListView, OrmCreateView, OrmUpdateView, OrmDeleteView
+from ..orm.views import OrmListView, OrmCreateView, OrmUpdateView, OrmDeleteView
 from .models import (
     Auditor, Familia, Catalogo, Tipo_inventario, Inventario,
     Tipo_ubicacion, Centro, Almacen, Unidad_medida

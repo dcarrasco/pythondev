@@ -1,4 +1,4 @@
-from ..base.views import OrmListView, OrmCreateView, OrmUpdateView, OrmDeleteView
+from ..orm.views import OrmListView, OrmCreateView, OrmUpdateView, OrmDeleteView
 from .models import Usuario, App, Rol, Modulo
 from .forms import UsuarioForm, AppForm, RolForm, ModuloForm
 

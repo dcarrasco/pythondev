@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"field",
+				"field_expression"
+			],
+			[
+				"query",
+				"querystring"
+			],
+			[
 				"__",
 				"__name__"
 			],
@@ -176,46 +184,47 @@
 	"buffers":
 	[
 		{
+			"file": "pythondev/templates/orm_list.html",
+			"settings":
+			{
+				"buffer_size": 1352,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "pythondev/base/views.py",
 			"settings":
 			{
-				"buffer_size": 5222,
+				"buffer_size": 6038,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "pythondev/acl/views.py",
+			"contents": "Package Control Messages\n========================\n\nMaterialize\n-----------\n\n   __  __       _            _       _   _\n  |  \\/  |     | |          (_)     | | (_)\n  | \\  / | __ _| |_ ___ _ __ _  __ _| |  _ _______\n  | |\\/| |/ _` | __/ _ \\ '__| |/ _` | | | |_  / _ \\\n  | |  | | (_| | ||  __/ |  | | (_| | | | |/ /  __/\n  \\_|  |_/\\__,_|\\__\\___|_|  |_|\\__,_|_| |_/___\\___|\n  \n  Materialize\n  https://github.com/saadq/Materialize\n  \n  Thanks for installing Materialize!\n  \n  Check out https://github.com/saadq/Materialize/screenshots.md for more visuals.\n  \n  ******************************************************************************\n  \n  Activation\n  -----------\n  Based on the theme you want to use, update your user preferences at  **(Preferences > Setting - User)** with the following:\n  \n  For example:\n  \n  Material Brogrammer\n  {\n      \"color_scheme\": \"Packages/Materialize/schemes/Material Brogrammer.tmTheme\",\n      \"theme\": \"Material Brogrammer.sublime-theme\"\n  }\n  \n  Contrast Mode\n  --------------\n  You can activate contrast mode by adding the following to your preferences:\n  {\n      \"material_theme_contrast_mode\": true\n  }\n  \n  MAKE SURE TO RESTART SUBLIME AFTER ACTIVATING THE THEME\n  ******************************************************************************\n  \n  Recommended UI and font settings:\n  I suggest that you use the following custom settings for a better experience with the theme:\n  \n  {\n      \"overlay_scroll_bars\": \"enabled\",\n      \"line_padding_top\": 3,\n      \"line_padding_bottom\": 3,\n      // On retina Mac\n      \"font_options\": [ \"gray_antialias\" ],\n      \"always_show_minimap_viewport\": true,\n      \"bold_folder_labels\": true,\n      // Highlight active indent\n      \"indent_guide_options\": [ \"draw_normal\", \"draw_active\" ]\n  }\n  \n  ******************************************************************************\n",
 			"settings":
 			{
-				"buffer_size": 443,
-				"encoding": "UTF-8",
+				"buffer_size": 1853,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "pythondev/base/tests.py",
+			"settings":
+			{
+				"buffer_size": 60,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "pythondev/templates/orm_form.html",
+			"file": "pythondev/inventario/models.py",
 			"settings":
 			{
-				"buffer_size": 1601,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pythondev/acl/models.py",
-			"settings":
-			{
-				"buffer_size": 3510,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pythondev/acl/urls.py",
-			"settings":
-			{
-				"buffer_size": 384,
+				"buffer_size": 5103,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -228,10 +237,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 275.0,
-		"last_filter": "filerena",
+		"height": 530.0,
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"materializ",
+				"Activate Materialize Theme"
+			],
+			[
+				"packinstall",
+				"Package Control: Install Package"
+			],
+			[
+				"materi",
+				"Material Theme: Activate theme"
+			],
 			[
 				"filerena",
 				"File: Rename"
@@ -281,10 +302,6 @@
 				"UI: Select Color Scheme"
 			],
 			[
-				"packinstall",
-				"Package Control: Install Package"
-			],
-			[
 				"packinst",
 				"Package Control: Install Package"
 			],
@@ -306,10 +323,6 @@
 			],
 			[
 				"material",
-				"Material Theme: Advanced configuration"
-			],
-			[
-				"materi",
 				"Material Theme: Advanced configuration"
 			],
 			[
@@ -593,7 +606,7 @@
 				"UI: Select Theme"
 			]
 		],
-		"width": 696.0
+		"width": 708.0
 	},
 	"console":
 	{
@@ -620,19 +633,20 @@
 	[
 		"/C/Users/Daniel/Code/pythondev",
 		"/C/Users/Daniel/Code/pythondev/pythondev",
-		"/C/Users/Daniel/Code/pythondev/pythondev/__pycache__"
+		"/C/Users/Daniel/Code/pythondev/pythondev/__pycache__",
+		"/C/Users/Daniel/Code/pythondev/pythondev/base"
 	],
 	"file_history":
 	[
-		"/C/Users/Daniel/Code/pythondev/pythondev/acl/templates/acl/app_list.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/acl/templates/acl/rol_list.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/acl/templates/acl/modulo_list.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/acl/urls.py",
-		"/C/Users/Daniel/Code/pythondev/pythondev/acl/models.py",
-		"/C/Users/Daniel/Code/pythondev/pythondev/templates/app_navbar.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/urls.py",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/almacen_list.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/auditor_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/templates/app_paginated.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/views.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/models.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/forms.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/templates/acl/usuario_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/templates/acl/rol_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/base/views.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/almacen_list.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/catalogo_list.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/centro_list.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/familia_list.html",
@@ -640,20 +654,22 @@
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/tipo_inventario_list.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/tipo_ubicacion_list.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/unidad_medida_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/views.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/urls.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/urls.py",
+		"/C/Users/Daniel/Code/pythondev/pythondev/templates/orm_form.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/templates/acl/app_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/acl/templates/acl/modulo_list.html",
+		"/C/Users/Daniel/Code/pythondev/pythondev/templates/app_navbar.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/orm_list.html",
 		"/C/Users/Daniel/Code/pythondev/config/urls.py",
-		"/C/Users/Daniel/Code/pythondev/pythondev/acl/forms.py",
-		"/C/Users/Daniel/Code/pythondev/pythondev/acl/views.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/models.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/generic_detail.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/generic_form.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/templates/orm_form.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/base/forms.py",
 		"/C/Users/Daniel/Code/pythondev/.gitignore",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/forms.py",
-		"/C/Users/Daniel/Code/pythondev/pythondev/base/views.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/app_alert.html",
-		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/views.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/base_index.html",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/admin.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/templates/app_menu_modulo.html",
@@ -662,7 +678,6 @@
 		"/C/Users/Daniel/Code/pythondev/config/settings.py",
 		"/C/Users/Daniel/Code/pythondev/pythondev/inventario/templates/inventario/auditor_form.html",
 		"/C/Users/Daniel/Code/pythondev/manage.py",
-		"/C/Users/Daniel/Code/pythondev/pythondev/templates/app_paginated.html",
 		"/C/Users/Daniel/Code/pythondev/inventario/models.py",
 		"/C/Users/Daniel/Code/pythondev/inventario/views.py",
 		"/C/Users/Daniel/Code/pythondev/base/templates/app_paginated.html",
@@ -750,12 +765,11 @@
 		"/C/Users/Daniel/Code/lara-dev/www/lara/routes/web.php",
 		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/composer/autoload_classmap.php",
 		"/C/Users/Daniel/Code/lara-dev/www/lara/vendor/composer/autoload_static.php",
-		"/C/Users/Daniel/Code/lara-dev/www/lara/composer.json",
-		"/C/Users/Daniel/Code/lara-dev/www/lara/app/Usuario.php"
+		"/C/Users/Daniel/Code/lara-dev/www/lara/composer.json"
 	],
 	"find":
 	{
-		"height": 105.0
+		"height": 106.0
 	},
 	"find_in_files":
 	{
@@ -770,6 +784,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"get_model_url_name",
+			"app_context",
+			"module_name",
+			"print",
+			"acl",
+			"pythondev",
+			" Acl",
+			"acl_",
+			" Acl",
 			"modulo",
 			"Modulo",
 			"modulo",
@@ -888,16 +911,7 @@
 			"Inventario",
 			"Tipo_inventario",
 			"Catalogo",
-			"Familia",
-			"Auditor",
-			"span",
-			"icono",
-			"llave_modulo",
-			"icono",
-			"llave_modulo",
-			"Rol",
-			"App",
-			"}}"
+			"Familia"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -915,86 +929,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "pythondev/base/views.py",
+					"file": "pythondev/templates/orm_list.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5222,
+						"buffer_size": 1352,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4007,
-								4007
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 459.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "pythondev/acl/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 443,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								443,
-								443
-							]
-						],
-						"settings":
-						{
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "pythondev/templates/orm_form.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1601,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								731,
-								759
+								277,
+								277
 							]
 						],
 						"settings":
@@ -1008,24 +960,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "pythondev/acl/models.py",
+					"buffer": 1,
+					"file": "pythondev/base/views.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3510,
+						"buffer_size": 6038,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3027,
-								3027
+								4259,
+								4277
 							]
 						],
 						"settings":
@@ -1034,6 +986,66 @@
 							"syntax": "Packages/Python/Python.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4306.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1853,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1462,
+								1429
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"default_dir": "C:\\Users\\Daniel\\Code\\pythondev\\pythondev\\base",
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1482.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pythondev/base/tests.py",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 60,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1044,19 +1056,19 @@
 				},
 				{
 					"buffer": 4,
-					"file": "pythondev/acl/urls.py",
+					"file": "pythondev/inventario/models.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 384,
+						"buffer_size": 5103,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								382,
-								382
+								521,
+								521
 							]
 						],
 						"settings":
@@ -1067,10 +1079,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 231.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -1132,6 +1144,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"invemodels",
+				"pythondev\\inventario\\models.py"
+			],
+			[
+				"basevie",
+				"pythondev\\base\\views.py"
+			],
 			[
 				"mode",
 				"pythondev\\acl\\models.py"
@@ -1635,14 +1655,6 @@
 			[
 				"tablafijainesee",
 				"Laravel\\database\\seeds\\TablaFijaInventariosSeeder.php"
-			],
-			[
-				"tipoin",
-				"App\\Inventario\\TipoInventario.php"
-			],
-			[
-				"modelfa",
-				"Laravel\\database\\factories\\ModelFactory.php"
 			]
 		],
 		"width": 0.0
